@@ -11,11 +11,32 @@ package logicpuzzle;
  */
 public class LogicPuzzle
 {
-    /*******************************
-    *	0: False
-    *	1: True
-    *	2: Undecided
-    *******************************/
+    /***********************************\
+    *	Red:		False		*
+    *	Green:		True		*
+    *	Yellow:		Possibly true	*
+    *	Default:	Undecided	*
+    \***********************************/
+    
+    /*******************************************\
+    * Brit		Red			*
+    * Swede		Dog			*
+    * Dane		Tea			*
+    * Green		Left of white		*
+    * Green		Coffee			*
+    * Pall Mall		Bird			*
+    * Yellow		Dunhill			*
+    * House 3		Milk			*
+    * Norwegian		House 1			*
+    * Blends		Next to cat owner	*
+    * Horse		Next to Dunhill		*
+    * Blue Master	Root beer		*
+    * German		Prince			*
+    * Norwegian		Next to blue walls	*
+    * Blends		Next to water		*
+    \*******************************************/
+    
+    
     public int getStatus(String type1, String type2)
     {
 	
