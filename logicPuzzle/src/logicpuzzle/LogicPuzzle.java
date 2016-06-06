@@ -38,6 +38,10 @@ public class LogicPuzzle
     * Blends		Next to water		*
     \*******************************************/
     
+    public enum bColor
+    {
+	 DEFAULT, RED, YELLOW, GREEN;
+    }
     
     String[] country = {"German", "Swede", "Dane", "Norwegian", "Brit"};
     String[] animal = {"horse", "dog", "cat", "bird", "fish"};
@@ -46,21 +50,9 @@ public class LogicPuzzle
     String[] color = {"Red", "Blue", "Green", "Yellow", "White"};
     String[] num = {"1", "2", "3", "4", "5"};
     String[][] list = {country, animal, drink, cigar, color, num};
-    private int status = DEFAULT;
+    private bColor status = bColor.DEFAULT;
     
-    public int getStatus(String type1, String type2)
-    {
-	
-	
-	return 0;
-    }
-    
-    public void setStatus(String type1, String type2, int clicks)
-    {
-	if(clicks == -1)
-	    
-	    
-    }
+
     
     
     public int[] findIndex(String type)

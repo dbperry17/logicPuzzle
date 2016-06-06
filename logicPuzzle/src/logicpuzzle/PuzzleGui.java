@@ -6,6 +6,11 @@
  */
 package logicpuzzle;
 
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
+
 /**
  *
  * @author Denise
@@ -362,7 +367,7 @@ public class PuzzleGui extends javax.swing.JFrame
         ButtonGreenTea = new javax.swing.JButton();
         ButtonGreenMilk = new javax.swing.JButton();
         ButtonGreenCoffee = new javax.swing.JButton();
-        Rootbeer = new javax.swing.JButton();
+        ButtonGreenRootbeer = new javax.swing.JButton();
         ButtonWhiteWater = new javax.swing.JButton();
         ButtonWhiteTea = new javax.swing.JButton();
         ButtonWhiteMilk = new javax.swing.JButton();
@@ -2627,11 +2632,18 @@ public class PuzzleGui extends javax.swing.JFrame
         gridBagConstraints.gridy = 13;
         getContentPane().add(ButtonGreenCoffee, gridBagConstraints);
 
-        Rootbeer.setText(" ");
+        ButtonGreenRootbeer.setText(" ");
+        ButtonGreenRootbeer.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                ButtonGreenRootbeerActionPerformed(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 20;
         gridBagConstraints.gridy = 13;
-        getContentPane().add(Rootbeer, gridBagConstraints);
+        getContentPane().add(ButtonGreenRootbeer, gridBagConstraints);
 
         ButtonWhiteWater.setText(" ");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -3422,6 +3434,11 @@ public class PuzzleGui extends javax.swing.JFrame
         // TODO add your handling code here:
     }//GEN-LAST:event_ButtonSystemClearActionPerformed
 
+    private void ButtonGreenRootbeerActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_ButtonGreenRootbeerActionPerformed
+    {//GEN-HEADEREND:event_ButtonGreenRootbeerActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ButtonGreenRootbeerActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -3430,7 +3447,7 @@ public class PuzzleGui extends javax.swing.JFrame
 	/* Set the Nimbus look and feel */
 	//<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
 	/* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
 	 */
 	try
 	{
@@ -3467,7 +3484,56 @@ public class PuzzleGui extends javax.swing.JFrame
 	});
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    /**********************\
+    * User-created Code    *
+    \**********************/
+
+    private class MainButtonListener implements ActionListener
+    {
+        private int clicks = 0;
+
+	@Override
+	public void actionPerformed(ActionEvent e)
+	{
+	    if(e.getSource() instanceof JButton)
+		{
+		    clicks++;
+		    if(clicks % 4 == 0)
+		    {
+			((JButton)e.getSource()).setBackground(Color.GRAY);
+			((JButton)e.getSource()).setContentAreaFilled(false);
+			((JButton)e.getSource()).setOpaque(true);
+		    }
+		    else if(clicks % 4 == 1)
+		    {
+			((JButton)e.getSource()).setBackground(Color.RED);
+			((JButton)e.getSource()).setContentAreaFilled(false);
+			((JButton)e.getSource()).setOpaque(true);
+		    }
+		    else if(clicks % 4 == 2)
+		    {
+			((JButton)e.getSource()).setBackground(Color.YELLOW);
+			((JButton)e.getSource()).setContentAreaFilled(false);
+			((JButton)e.getSource()).setOpaque(true);
+		    }
+		    else
+		    {
+			((JButton)e.getSource()).setBackground(Color.GREEN);
+			((JButton)e.getSource()).setContentAreaFilled(false);
+			((JButton)e.getSource()).setOpaque(true);
+		    }
+		}
+	}
+    }
+
+    public void setupMainButtonListener(JButton myButton)
+    {
+	myButton.setForeground(Color.GRAY);
+	myButton.addActionListener(new MainButtonListener());
+    }
+
+
+    // Netbeans-Generated Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ButtonBird1;
     private javax.swing.JButton ButtonBird2;
     private javax.swing.JButton ButtonBird3;
@@ -3655,6 +3721,7 @@ public class PuzzleGui extends javax.swing.JFrame
     private javax.swing.JButton ButtonGreenMilk;
     private javax.swing.JButton ButtonGreenPallmall;
     private javax.swing.JButton ButtonGreenPrince;
+    private javax.swing.JButton ButtonGreenRootbeer;
     private javax.swing.JButton ButtonGreenTea;
     private javax.swing.JButton ButtonGreenWater;
     private javax.swing.JButton ButtonHorse1;
@@ -3906,7 +3973,6 @@ public class PuzzleGui extends javax.swing.JFrame
     private javax.swing.JLabel LabelVWater;
     private javax.swing.JLabel LabelVWhite;
     private javax.swing.JLabel LabelVYellow;
-    private javax.swing.JButton Rootbeer;
     private javax.swing.JDialog jDialog1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator10;
@@ -3921,4 +3987,9 @@ public class PuzzleGui extends javax.swing.JFrame
     private javax.swing.JSeparator jSeparator8;
     private javax.swing.JSeparator jSeparator9;
     // End of variables declaration//GEN-END:variables
+
+    // User-created Variables declaration
+    JButton[] birdNum = {ButtonBird1, ButtonBird2, ButtonBird3, ButtonBird4, ButtonBird5};
+
+
 }
