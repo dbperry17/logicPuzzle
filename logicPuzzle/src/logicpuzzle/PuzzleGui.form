@@ -29,7 +29,7 @@
 
   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="LabelGerman">
+    <Component class="javax.swing.JLabel" name="LabelHNatGerman">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="2"/>
         <Property name="text" type="java.lang.String" value="German"/>
@@ -41,7 +41,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelNorwegian">
+    <Component class="javax.swing.JLabel" name="LabelHNatNorwegian">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="2"/>
         <Property name="text" type="java.lang.String" value="Norwegian"/>
@@ -53,7 +53,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelSwede">
+    <Component class="javax.swing.JLabel" name="LabelHNatSwede">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="2"/>
         <Property name="text" type="java.lang.String" value="Swede"/>
@@ -65,7 +65,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelBrit">
+    <Component class="javax.swing.JLabel" name="LabelHNatBrit">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="2"/>
         <Property name="text" type="java.lang.String" value="Brit"/>
@@ -77,7 +77,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelDane">
+    <Component class="javax.swing.JLabel" name="LabelHNatDane">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="2"/>
         <Property name="text" type="java.lang.String" value="Dane"/>
@@ -89,7 +89,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelHYellow">
+    <Component class="javax.swing.JLabel" name="LabelHColYellow">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="2"/>
         <Property name="text" type="java.lang.String" value="Yellow"/>
@@ -101,7 +101,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelHBlue">
+    <Component class="javax.swing.JLabel" name="LabelHColBlue">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="2"/>
         <Property name="text" type="java.lang.String" value="Blue"/>
@@ -113,7 +113,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelHRed">
+    <Component class="javax.swing.JLabel" name="LabelHColRed">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="2"/>
         <Property name="text" type="java.lang.String" value="Red"/>
@@ -125,7 +125,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelHGreen">
+    <Component class="javax.swing.JLabel" name="LabelHColGreen">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="2"/>
         <Property name="text" type="java.lang.String" value="Green"/>
@@ -137,7 +137,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelHWhite">
+    <Component class="javax.swing.JLabel" name="LabelHColWhite">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="2"/>
         <Property name="text" type="java.lang.String" value="White"/>
@@ -149,7 +149,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelHPallmall">
+    <Component class="javax.swing.JLabel" name="LabelHCigPallmall">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="2"/>
         <Property name="text" type="java.lang.String" value="Pall Mall"/>
@@ -161,7 +161,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelHPrince">
+    <Component class="javax.swing.JLabel" name="LabelHCigPrince">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="2"/>
         <Property name="text" type="java.lang.String" value="Prince"/>
@@ -173,7 +173,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelHBlueMaster">
+    <Component class="javax.swing.JLabel" name="LabelHCigBlueMaster">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="2"/>
         <Property name="text" type="java.lang.String" value="Blue Master"/>
@@ -185,7 +185,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelHDunhill">
+    <Component class="javax.swing.JLabel" name="LabelHCigDunhill">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="2"/>
         <Property name="text" type="java.lang.String" value="Dunhill"/>
@@ -197,7 +197,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelHBlends">
+    <Component class="javax.swing.JLabel" name="LabelHCigBlends">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="2"/>
         <Property name="text" type="java.lang.String" value="Blends"/>
@@ -209,7 +209,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelHWater">
+    <Component class="javax.swing.JLabel" name="LabelHBevWater">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="2"/>
         <Property name="text" type="java.lang.String" value="Water"/>
@@ -221,7 +221,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelHTea">
+    <Component class="javax.swing.JLabel" name="LabelHBevTea">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="2"/>
         <Property name="text" type="java.lang.String" value="Tea"/>
@@ -233,7 +233,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelHMilk">
+    <Component class="javax.swing.JLabel" name="LabelHBevMilk">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="2"/>
         <Property name="text" type="java.lang.String" value="Milk"/>
@@ -245,7 +245,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelHCoffee">
+    <Component class="javax.swing.JLabel" name="LabelHBevCoffee">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="2"/>
         <Property name="text" type="java.lang.String" value="Coffee"/>
@@ -257,7 +257,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelHRootbeer">
+    <Component class="javax.swing.JLabel" name="LabelHBevRootbeer">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="2"/>
         <Property name="text" type="java.lang.String" value="Root Beer"/>
@@ -269,7 +269,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelHHorse">
+    <Component class="javax.swing.JLabel" name="LabelHAniHorse">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="2"/>
         <Property name="text" type="java.lang.String" value="Horse"/>
@@ -281,7 +281,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelHDog">
+    <Component class="javax.swing.JLabel" name="LabelHAniDog">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="2"/>
         <Property name="text" type="java.lang.String" value="Dog"/>
@@ -293,7 +293,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelHCat">
+    <Component class="javax.swing.JLabel" name="LabelHAniCat">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="2"/>
         <Property name="text" type="java.lang.String" value="Cat"/>
@@ -305,7 +305,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelHBird">
+    <Component class="javax.swing.JLabel" name="LabelHAniBird">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="2"/>
         <Property name="text" type="java.lang.String" value="Bird"/>
@@ -317,7 +317,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelHFish">
+    <Component class="javax.swing.JLabel" name="LabelHAniFish">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="2"/>
         <Property name="text" type="java.lang.String" value="Fish"/>
@@ -329,7 +329,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelNum1">
+    <Component class="javax.swing.JLabel" name="LabelVNum1">
       <Properties>
         <Property name="text" type="java.lang.String" value="1"/>
       </Properties>
@@ -339,7 +339,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelNum2">
+    <Component class="javax.swing.JLabel" name="LabelVNum2">
       <Properties>
         <Property name="text" type="java.lang.String" value="2"/>
       </Properties>
@@ -349,7 +349,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelNum3">
+    <Component class="javax.swing.JLabel" name="LabelVNum3">
       <Properties>
         <Property name="text" type="java.lang.String" value="3"/>
       </Properties>
@@ -359,7 +359,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelNum4">
+    <Component class="javax.swing.JLabel" name="LabelVNum4">
       <Properties>
         <Property name="text" type="java.lang.String" value="4"/>
       </Properties>
@@ -369,7 +369,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelNum5">
+    <Component class="javax.swing.JLabel" name="LabelVNum5">
       <Properties>
         <Property name="text" type="java.lang.String" value="5"/>
       </Properties>
@@ -379,7 +379,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelVHorse">
+    <Component class="javax.swing.JLabel" name="LabelVAniHorse">
       <Properties>
         <Property name="text" type="java.lang.String" value="H"/>
       </Properties>
@@ -389,7 +389,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelVDog">
+    <Component class="javax.swing.JLabel" name="LabelVAniDog">
       <Properties>
         <Property name="text" type="java.lang.String" value="D"/>
       </Properties>
@@ -399,7 +399,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelVCat">
+    <Component class="javax.swing.JLabel" name="LabelVAniCat">
       <Properties>
         <Property name="text" type="java.lang.String" value="C"/>
       </Properties>
@@ -409,7 +409,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelVBird">
+    <Component class="javax.swing.JLabel" name="LabelVAniBird">
       <Properties>
         <Property name="text" type="java.lang.String" value="B"/>
       </Properties>
@@ -419,7 +419,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelVFish">
+    <Component class="javax.swing.JLabel" name="LabelVAniFish">
       <Properties>
         <Property name="text" type="java.lang.String" value="F"/>
       </Properties>
@@ -429,7 +429,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelVWater">
+    <Component class="javax.swing.JLabel" name="LabelVBevWater">
       <Properties>
         <Property name="text" type="java.lang.String" value="W"/>
       </Properties>
@@ -439,7 +439,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelVTea">
+    <Component class="javax.swing.JLabel" name="LabelVBevTea">
       <Properties>
         <Property name="text" type="java.lang.String" value="T"/>
       </Properties>
@@ -449,7 +449,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelVMilk">
+    <Component class="javax.swing.JLabel" name="LabelVBevMilk">
       <Properties>
         <Property name="text" type="java.lang.String" value="M"/>
       </Properties>
@@ -459,7 +459,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelVCoffee">
+    <Component class="javax.swing.JLabel" name="LabelVBevCoffee">
       <Properties>
         <Property name="text" type="java.lang.String" value="C"/>
       </Properties>
@@ -469,7 +469,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelVRootbeer">
+    <Component class="javax.swing.JLabel" name="LabelVBevRootbeer">
       <Properties>
         <Property name="text" type="java.lang.String" value="RB"/>
       </Properties>
@@ -479,7 +479,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelVPallmall">
+    <Component class="javax.swing.JLabel" name="LabelVCigPallmall">
       <Properties>
         <Property name="text" type="java.lang.String" value="PM"/>
       </Properties>
@@ -489,7 +489,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelVPrince">
+    <Component class="javax.swing.JLabel" name="LabelVCigPrince">
       <Properties>
         <Property name="text" type="java.lang.String" value="P"/>
       </Properties>
@@ -499,7 +499,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelVBluemaster">
+    <Component class="javax.swing.JLabel" name="LabelVCigBluemaster">
       <Properties>
         <Property name="text" type="java.lang.String" value="BM"/>
       </Properties>
@@ -509,7 +509,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelVDunhill">
+    <Component class="javax.swing.JLabel" name="LabelVCigDunhill">
       <Properties>
         <Property name="text" type="java.lang.String" value="D"/>
       </Properties>
@@ -519,7 +519,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelVBlends">
+    <Component class="javax.swing.JLabel" name="LabelVCigBlends">
       <Properties>
         <Property name="text" type="java.lang.String" value="B"/>
       </Properties>
@@ -529,7 +529,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelVYellow">
+    <Component class="javax.swing.JLabel" name="LabelVColYellow">
       <Properties>
         <Property name="text" type="java.lang.String" value="Y"/>
       </Properties>
@@ -539,7 +539,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelVBlue">
+    <Component class="javax.swing.JLabel" name="LabelVColBlue">
       <Properties>
         <Property name="text" type="java.lang.String" value="B"/>
       </Properties>
@@ -549,7 +549,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelVRed">
+    <Component class="javax.swing.JLabel" name="LabelVColRed">
       <Properties>
         <Property name="text" type="java.lang.String" value="R"/>
       </Properties>
@@ -559,7 +559,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelVGreen">
+    <Component class="javax.swing.JLabel" name="LabelVColGreen">
       <Properties>
         <Property name="text" type="java.lang.String" value="G"/>
       </Properties>
@@ -569,7 +569,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="LabelVWhite">
+    <Component class="javax.swing.JLabel" name="LabelVColWhite">
       <Properties>
         <Property name="text" type="java.lang.String" value="W"/>
       </Properties>
@@ -679,7 +679,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGerman1">
+    <Component class="javax.swing.JButton" name="Button_NatGerman_Num1">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -689,7 +689,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGerman2">
+    <Component class="javax.swing.JButton" name="Button_NatGerman_Num2">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -699,7 +699,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGerman3">
+    <Component class="javax.swing.JButton" name="Button_NatGerman_Num3">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -709,7 +709,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGerman4">
+    <Component class="javax.swing.JButton" name="Button_NatGerman_Num4">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -719,7 +719,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGerman5">
+    <Component class="javax.swing.JButton" name="Button_NatGerman_Num5">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -729,7 +729,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonNorwegian1">
+    <Component class="javax.swing.JButton" name="Button_NatNorwegian_Num1">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -739,7 +739,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonNorwegian2">
+    <Component class="javax.swing.JButton" name="Button_NatNorwegian_Num2">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -749,7 +749,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonNorwegian3">
+    <Component class="javax.swing.JButton" name="Button_NatNorwegian_Num3">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -759,7 +759,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonNorwegian4">
+    <Component class="javax.swing.JButton" name="Button_NatNorwegian_Num4">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -769,7 +769,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonNorwegian5">
+    <Component class="javax.swing.JButton" name="Button_NatNorwegian_Num5">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -779,17 +779,20 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonSwede1">
+    <Component class="javax.swing.JButton" name="Button_NatSwede_Num1">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_NatSwede_Num1ActionPerformed"/>
+      </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
           <GridBagConstraints gridX="4" gridY="6" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="10" weightX="0.0" weightY="0.0"/>
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonSwede2">
+    <Component class="javax.swing.JButton" name="Button_NatSwede_Num2">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -799,7 +802,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonSwede3">
+    <Component class="javax.swing.JButton" name="Button_NatSwede_Num3">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -809,7 +812,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonSwede4">
+    <Component class="javax.swing.JButton" name="Button_NatSwede_Num4">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -819,7 +822,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonSwede5">
+    <Component class="javax.swing.JButton" name="Button_NatSwede_Num5">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -829,7 +832,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBrit1">
+    <Component class="javax.swing.JButton" name="Button_NatBrit_Num1">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -839,7 +842,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBrit2">
+    <Component class="javax.swing.JButton" name="Button_NatBrit_Num2">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -849,7 +852,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBrit3">
+    <Component class="javax.swing.JButton" name="Button_NatBrit_Num3">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -859,17 +862,20 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBrit4">
+    <Component class="javax.swing.JButton" name="Button_NatBrit_Num4">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_NatBrit_Num4ActionPerformed"/>
+      </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
           <GridBagConstraints gridX="7" gridY="7" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="10" weightX="0.0" weightY="0.0"/>
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBrit5">
+    <Component class="javax.swing.JButton" name="Button_NatBrit_Num5">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -879,17 +885,20 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDane1">
+    <Component class="javax.swing.JButton" name="Button_NatDane_Num1">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_NatDane_Num1ActionPerformed"/>
+      </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
           <GridBagConstraints gridX="4" gridY="8" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="10" weightX="0.0" weightY="0.0"/>
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDane2">
+    <Component class="javax.swing.JButton" name="Button_NatDane_Num2">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -899,7 +908,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDane3">
+    <Component class="javax.swing.JButton" name="Button_NatDane_Num3">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -909,7 +918,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDane4">
+    <Component class="javax.swing.JButton" name="Button_NatDane_Num4">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -919,7 +928,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDane5">
+    <Component class="javax.swing.JButton" name="Button_NatDane_Num5">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -929,7 +938,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonYellow1">
+    <Component class="javax.swing.JButton" name="Button_ColYellow_Num1">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -939,7 +948,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonYellow2">
+    <Component class="javax.swing.JButton" name="Button_ColYellow_Num2">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -949,7 +958,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonYellow3">
+    <Component class="javax.swing.JButton" name="Button_ColYellow_Num3">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -959,7 +968,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonYellow4">
+    <Component class="javax.swing.JButton" name="Button_ColYellow_Num4">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -969,7 +978,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonYellow5">
+    <Component class="javax.swing.JButton" name="Button_ColYellow_Num5">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -979,7 +988,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBlue1">
+    <Component class="javax.swing.JButton" name="Button_ColBlue_Num1">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -989,7 +998,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBlue2">
+    <Component class="javax.swing.JButton" name="Button_ColBlue_Num2">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -999,7 +1008,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBlue3">
+    <Component class="javax.swing.JButton" name="Button_ColBlue_Num3">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1009,7 +1018,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBlue4">
+    <Component class="javax.swing.JButton" name="Button_ColBlue_Num4">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1019,7 +1028,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBlue5">
+    <Component class="javax.swing.JButton" name="Button_ColBlue_Num5">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1029,7 +1038,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonRed1">
+    <Component class="javax.swing.JButton" name="Button_ColRed_Num1">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1039,7 +1048,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonRed2">
+    <Component class="javax.swing.JButton" name="Button_ColRed_Num2">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1049,7 +1058,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonRed3">
+    <Component class="javax.swing.JButton" name="Button_ColRed_Num3">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1059,7 +1068,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonRed4">
+    <Component class="javax.swing.JButton" name="Button_ColRed_Num4">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1069,7 +1078,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonRed5">
+    <Component class="javax.swing.JButton" name="Button_ColRed_Num5">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1079,7 +1088,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGreen1">
+    <Component class="javax.swing.JButton" name="Button_ColGreen_Num1">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1089,7 +1098,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGreen2">
+    <Component class="javax.swing.JButton" name="Button_ColGreen_Num2">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1099,7 +1108,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGreen3">
+    <Component class="javax.swing.JButton" name="Button_ColGreen_Num3">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1109,7 +1118,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGreen4">
+    <Component class="javax.swing.JButton" name="Button_ColGreen_Num4">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1119,7 +1128,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGreen5">
+    <Component class="javax.swing.JButton" name="Button_ColGreen_Num5">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1129,7 +1138,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonWhite1">
+    <Component class="javax.swing.JButton" name="Button_ColWhite_Num1">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1139,7 +1148,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonWhite2">
+    <Component class="javax.swing.JButton" name="Button_ColWhite_Num2">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1149,7 +1158,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonWhite3">
+    <Component class="javax.swing.JButton" name="Button_ColWhite_Num3">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1159,7 +1168,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonWhite4">
+    <Component class="javax.swing.JButton" name="Button_ColWhite_Num4">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1169,7 +1178,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonWhite5">
+    <Component class="javax.swing.JButton" name="Button_ColWhite_Num5">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1179,7 +1188,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonPallmall1">
+    <Component class="javax.swing.JButton" name="Button_CigPallmall_Num1">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1189,7 +1198,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonPallmall2">
+    <Component class="javax.swing.JButton" name="Button_CigPallmall_Num2">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1199,7 +1208,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonPallmall3">
+    <Component class="javax.swing.JButton" name="Button_CigPallmall_Num3">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1209,7 +1218,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonPallmal4">
+    <Component class="javax.swing.JButton" name="Button_CigPallmall_Num4">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1219,7 +1228,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonPallmall5">
+    <Component class="javax.swing.JButton" name="Button_CigPallmall_Num5">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1229,7 +1238,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonPrince1">
+    <Component class="javax.swing.JButton" name="Button_CigPrince_Num1">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1239,7 +1248,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonPrince2">
+    <Component class="javax.swing.JButton" name="Button_CigPrince_Num2">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1249,7 +1258,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonPrince3">
+    <Component class="javax.swing.JButton" name="Button_CigPrince_Num3">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1259,7 +1268,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonPrince4">
+    <Component class="javax.swing.JButton" name="Button_CigPrince_Num4">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1269,7 +1278,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonPrince5">
+    <Component class="javax.swing.JButton" name="Button_CigPrince_Num5">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1279,7 +1288,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBluemaster1">
+    <Component class="javax.swing.JButton" name="Button_CigBluemaster_Num1">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1289,7 +1298,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBluemaster2">
+    <Component class="javax.swing.JButton" name="Button_CigBluemaster_Num2">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1299,7 +1308,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBluemaster3">
+    <Component class="javax.swing.JButton" name="Button_CigBluemaster_Num3">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1309,7 +1318,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBluemaster4">
+    <Component class="javax.swing.JButton" name="Button_CigBluemaster_Num4">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1319,7 +1328,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBluemaster5">
+    <Component class="javax.swing.JButton" name="Button_CigBluemaster_Num5">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1329,7 +1338,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDunhill1">
+    <Component class="javax.swing.JButton" name="Button_CigDunhill_Num1">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1339,7 +1348,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDunhill2">
+    <Component class="javax.swing.JButton" name="Button_CigDunhill_Num2">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1349,7 +1358,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDunhill3">
+    <Component class="javax.swing.JButton" name="Button_CigDunhill_Num3">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1359,7 +1368,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDunhill4">
+    <Component class="javax.swing.JButton" name="Button_CigDunhill_Num4">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1369,7 +1378,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDunhill5">
+    <Component class="javax.swing.JButton" name="Button_CigDunhill_Num5">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1379,7 +1388,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBlends1">
+    <Component class="javax.swing.JButton" name="Button_CigBlends_Num1">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1389,7 +1398,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBlends2">
+    <Component class="javax.swing.JButton" name="Button_CigBlends_Num2">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1399,7 +1408,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBlends3">
+    <Component class="javax.swing.JButton" name="Button_CigBlends_Num3">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1409,7 +1418,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBlends4">
+    <Component class="javax.swing.JButton" name="Button_CigBlends_Num4">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1419,7 +1428,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBlends5">
+    <Component class="javax.swing.JButton" name="Button_CigBlends_Num5">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1429,7 +1438,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonWater1">
+    <Component class="javax.swing.JButton" name="Button_BevWater_Num1">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1439,7 +1448,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonWater2">
+    <Component class="javax.swing.JButton" name="Button_BevWater_Num2">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1449,7 +1458,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonWater3">
+    <Component class="javax.swing.JButton" name="Button_BevWater_Num3">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1459,7 +1468,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonWater4">
+    <Component class="javax.swing.JButton" name="Button_BevWater_Num4">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1469,7 +1478,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonWater5">
+    <Component class="javax.swing.JButton" name="Button_BevWater_Num5">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1479,7 +1488,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonTea1">
+    <Component class="javax.swing.JButton" name="Button_BevTea_Num1">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1489,17 +1498,20 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonTea2">
+    <Component class="javax.swing.JButton" name="Button_BevTea_Num2">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_BevTea_Num2ActionPerformed"/>
+      </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
           <GridBagConstraints gridX="5" gridY="23" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="10" weightX="0.0" weightY="0.0"/>
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonTea3">
+    <Component class="javax.swing.JButton" name="Button_BevTea_Num3">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1509,7 +1521,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonTea4">
+    <Component class="javax.swing.JButton" name="Button_BevTea_Num4">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1519,7 +1531,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonTea5">
+    <Component class="javax.swing.JButton" name="Button_BevTea_Num5">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1529,7 +1541,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonMilk1">
+    <Component class="javax.swing.JButton" name="Button_BevMilk_Num1">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1539,7 +1551,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonMilk2">
+    <Component class="javax.swing.JButton" name="Button_BevMilk_Num2">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1549,7 +1561,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonMilk3">
+    <Component class="javax.swing.JButton" name="Button_BevMilk_Num3">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1559,7 +1571,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonMilk4">
+    <Component class="javax.swing.JButton" name="Button_BevMilk_Num4">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1569,7 +1581,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonMilk5">
+    <Component class="javax.swing.JButton" name="Button_BevMilk_Num5">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1579,7 +1591,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonCoffee1">
+    <Component class="javax.swing.JButton" name="Button_BevCoffee_Num1">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1589,7 +1601,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonCoffee2">
+    <Component class="javax.swing.JButton" name="Button_BevCoffee_Num2">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1599,7 +1611,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonCoffee3">
+    <Component class="javax.swing.JButton" name="Button_BevCoffee_Num3">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1609,7 +1621,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonCoffee4">
+    <Component class="javax.swing.JButton" name="Button_BevCoffee_Num4">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1619,7 +1631,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonCoffee5">
+    <Component class="javax.swing.JButton" name="Button_BevCoffee_Num5">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1629,7 +1641,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonRootbeer1">
+    <Component class="javax.swing.JButton" name="Button_BevRootbeer_Num1">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1639,7 +1651,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonRootbeer2">
+    <Component class="javax.swing.JButton" name="Button_BevRootbeer_Num2">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1649,7 +1661,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonRootbeer3">
+    <Component class="javax.swing.JButton" name="Button_BevRootbeer_Num3">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1659,7 +1671,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonRootbeer4">
+    <Component class="javax.swing.JButton" name="Button_BevRootbeer_Num4">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1669,7 +1681,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonRootbeer5">
+    <Component class="javax.swing.JButton" name="Button_BevRootbeer_Num5">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1679,7 +1691,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonHorse1">
+    <Component class="javax.swing.JButton" name="Button_AniHorse_Num1">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1689,7 +1701,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonHorse2">
+    <Component class="javax.swing.JButton" name="Button_AniHorse_Num2">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1699,7 +1711,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonHorse3">
+    <Component class="javax.swing.JButton" name="Button_AniHorse_Num3">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1709,7 +1721,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonHorse4">
+    <Component class="javax.swing.JButton" name="Button_AniHorse_Num4">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1719,7 +1731,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonHorse5">
+    <Component class="javax.swing.JButton" name="Button_AniHorse_Num5">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1729,7 +1741,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDog1">
+    <Component class="javax.swing.JButton" name="Button_AniDog_Num1">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1739,7 +1751,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDog2">
+    <Component class="javax.swing.JButton" name="Button_AniDog_Num2">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1749,7 +1761,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDog3">
+    <Component class="javax.swing.JButton" name="Button_AniDog_Num3">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1759,7 +1771,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDog4">
+    <Component class="javax.swing.JButton" name="Button_AniDog_Num4">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1769,7 +1781,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDog5">
+    <Component class="javax.swing.JButton" name="Button_AniDog_Num5">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1779,7 +1791,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonCat1">
+    <Component class="javax.swing.JButton" name="Button_AniCat_Num1">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1789,7 +1801,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonCat2">
+    <Component class="javax.swing.JButton" name="Button_AniCat_Num2">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1799,7 +1811,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonCat3">
+    <Component class="javax.swing.JButton" name="Button_AniCat_Num3">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1809,7 +1821,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonCat4">
+    <Component class="javax.swing.JButton" name="Button_AniCat_Num4">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1819,7 +1831,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonCat5">
+    <Component class="javax.swing.JButton" name="Button_AniCat_Num5">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1829,7 +1841,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBird1">
+    <Component class="javax.swing.JButton" name="Button_AniBird_Num1">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1839,7 +1851,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBird2">
+    <Component class="javax.swing.JButton" name="Button_AniBird_Num2">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1849,7 +1861,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBird3">
+    <Component class="javax.swing.JButton" name="Button_AniBird_Num3">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1859,7 +1871,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBird4">
+    <Component class="javax.swing.JButton" name="Button_AniBird_Num4">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1869,7 +1881,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBird5">
+    <Component class="javax.swing.JButton" name="Button_AniBird_Num5">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1879,7 +1891,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonFish1">
+    <Component class="javax.swing.JButton" name="Button_AniFish_Num1">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1889,7 +1901,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonFish2">
+    <Component class="javax.swing.JButton" name="Button_AniFish_Num2">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1899,7 +1911,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonFish3">
+    <Component class="javax.swing.JButton" name="Button_AniFish_Num3">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1909,7 +1921,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonFish4">
+    <Component class="javax.swing.JButton" name="Button_AniFish_Num4">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1919,7 +1931,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonFish5">
+    <Component class="javax.swing.JButton" name="Button_AniFish_Num5">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1929,7 +1941,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGermanHorse">
+    <Component class="javax.swing.JButton" name="Button_NatGerman_AniHorse">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1939,7 +1951,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGermanDog">
+    <Component class="javax.swing.JButton" name="Button_NatGerman_AniDog">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1949,7 +1961,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGermanCat">
+    <Component class="javax.swing.JButton" name="Button_NatGerman_AniCat">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1959,7 +1971,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGermanBird">
+    <Component class="javax.swing.JButton" name="Button_NatGerman_AniBird">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1969,7 +1981,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGermanFish">
+    <Component class="javax.swing.JButton" name="Button_NatGerman_AniFish">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1979,7 +1991,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonNorwegianHorse">
+    <Component class="javax.swing.JButton" name="Button_NatNorwegian_AniHorse">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1989,7 +2001,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonNorwegianDog">
+    <Component class="javax.swing.JButton" name="Button_NatNorwegian_AniDog">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -1999,7 +2011,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonNorwegianCat">
+    <Component class="javax.swing.JButton" name="Button_NatNorwegian_AniCat">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2009,7 +2021,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonNorwegianBird">
+    <Component class="javax.swing.JButton" name="Button_NatNorwegian_AniBird">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2019,7 +2031,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonNorwegianFish">
+    <Component class="javax.swing.JButton" name="Button_NatNorwegian_AniFish">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2029,7 +2041,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonSwedeHorse">
+    <Component class="javax.swing.JButton" name="Button_NatSwede_AniHorse">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2039,7 +2051,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonSwedeDog">
+    <Component class="javax.swing.JButton" name="Button_NatSwede_AniDog">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2049,7 +2061,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonSwedeCat">
+    <Component class="javax.swing.JButton" name="Button_NatSwede_AniCat">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2059,7 +2071,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonSwedeBird">
+    <Component class="javax.swing.JButton" name="Button_NatSwede_AniBird">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2069,7 +2081,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonSwedeFish">
+    <Component class="javax.swing.JButton" name="Button_NatSwede_AniFish">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2079,7 +2091,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBritHorse">
+    <Component class="javax.swing.JButton" name="Button_NatBrit_AniHorse">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2089,7 +2101,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBritDog">
+    <Component class="javax.swing.JButton" name="Button_NatBrit_AniDog">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2099,7 +2111,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBritCat">
+    <Component class="javax.swing.JButton" name="Button_NatBrit_AniCat">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2109,7 +2121,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBritBird">
+    <Component class="javax.swing.JButton" name="Button_NatBrit_AniBird">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2119,7 +2131,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBritFish">
+    <Component class="javax.swing.JButton" name="Button_NatBrit_AniFish">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2129,7 +2141,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDaneHorse">
+    <Component class="javax.swing.JButton" name="Button_NatDane_AniHorse">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2139,7 +2151,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDaneDog">
+    <Component class="javax.swing.JButton" name="Button_NatDane_AniDog">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2149,7 +2161,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDaneCat">
+    <Component class="javax.swing.JButton" name="Button_NatDane_AniCat">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2159,7 +2171,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDaneBird">
+    <Component class="javax.swing.JButton" name="Button_NatDane_AniBird">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2169,7 +2181,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDaneFish">
+    <Component class="javax.swing.JButton" name="Button_NatDane_AniFish">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2179,7 +2191,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonYellowHorse">
+    <Component class="javax.swing.JButton" name="Button_ColYellow_AniHorse">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2189,7 +2201,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonYellowDog">
+    <Component class="javax.swing.JButton" name="Button_ColYellow_AniDog">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2199,17 +2211,20 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonYellowCat">
+    <Component class="javax.swing.JButton" name="Button_ColYellow_AniCat">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_ColYellow_AniCatActionPerformed"/>
+      </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
           <GridBagConstraints gridX="12" gridY="10" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="10" weightX="0.0" weightY="0.0"/>
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonYellowBird">
+    <Component class="javax.swing.JButton" name="Button_ColYellow_AniBird">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2219,7 +2234,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonYellowFish">
+    <Component class="javax.swing.JButton" name="Button_ColYellow_AniFish">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2229,7 +2244,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBlueHorse">
+    <Component class="javax.swing.JButton" name="Button_ColBlue_AniHorse">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2239,7 +2254,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBlueDog">
+    <Component class="javax.swing.JButton" name="Button_ColBlue_AniDog">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2249,7 +2264,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBlueCat">
+    <Component class="javax.swing.JButton" name="Button_ColBlue_AniCat">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2259,7 +2274,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBlueBird">
+    <Component class="javax.swing.JButton" name="Button_ColBlue_AniBird">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2269,7 +2284,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBlueFish">
+    <Component class="javax.swing.JButton" name="Button_ColBlue_AniFish">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2279,7 +2294,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonRedHorse">
+    <Component class="javax.swing.JButton" name="Button_ColRed_AniHorse">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2289,7 +2304,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonRedDog">
+    <Component class="javax.swing.JButton" name="Button_ColRed_AniDog">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2299,7 +2314,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonRedCat">
+    <Component class="javax.swing.JButton" name="Button_ColRed_AniCat">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2309,7 +2324,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonRedBird">
+    <Component class="javax.swing.JButton" name="Button_ColRed_AniBird">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2319,7 +2334,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonRedFish">
+    <Component class="javax.swing.JButton" name="Button_ColRed_AniFish">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2329,7 +2344,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGreenHorse">
+    <Component class="javax.swing.JButton" name="Button_ColGreen_AniHorse">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2339,7 +2354,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGreenDog">
+    <Component class="javax.swing.JButton" name="Button_ColGreen_AniDog">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2349,7 +2364,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGreenCat">
+    <Component class="javax.swing.JButton" name="Button_ColGreen_AniCat">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2359,7 +2374,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGreenBird">
+    <Component class="javax.swing.JButton" name="Button_ColGreen_AniBird">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2369,7 +2384,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGreenFish">
+    <Component class="javax.swing.JButton" name="Button_ColGreen_AniFish">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2379,7 +2394,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonWhiteHorse">
+    <Component class="javax.swing.JButton" name="Button_ColWhite_AniHorse">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2389,7 +2404,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonWhiteDog">
+    <Component class="javax.swing.JButton" name="Button_ColWhite_AniDog">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2399,7 +2414,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonWhiteCat">
+    <Component class="javax.swing.JButton" name="Button_ColWhite_AniCat">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2409,7 +2424,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonWhiteBird">
+    <Component class="javax.swing.JButton" name="Button_ColWhite_AniBird">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2419,7 +2434,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonWhiteFish">
+    <Component class="javax.swing.JButton" name="Button_ColWhite_AniFish">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2429,7 +2444,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonPallmallHorse">
+    <Component class="javax.swing.JButton" name="Button_CigPallmall_AniHorse">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2439,7 +2454,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonPallmallDog">
+    <Component class="javax.swing.JButton" name="Button_CigPallmall_AniDog">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2449,7 +2464,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonPallmallCat">
+    <Component class="javax.swing.JButton" name="Button_CigPallmall_AniCat">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2459,7 +2474,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonPallmallBird">
+    <Component class="javax.swing.JButton" name="Button_CigPallmall_AniBird">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2469,7 +2484,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonPallmallFish">
+    <Component class="javax.swing.JButton" name="Button_CigPallmall_AniFish">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2479,7 +2494,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonPrinceHorse">
+    <Component class="javax.swing.JButton" name="Button_CigPrince_AniHorse">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2489,7 +2504,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonPrinceDog">
+    <Component class="javax.swing.JButton" name="Button_CigPrince_AniDog">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2499,7 +2514,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonPrinceCat">
+    <Component class="javax.swing.JButton" name="Button_CigPrince_AniCat">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2509,7 +2524,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonPrinceBird">
+    <Component class="javax.swing.JButton" name="Button_CigPrince_AniBird">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2519,7 +2534,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonPrinceFish">
+    <Component class="javax.swing.JButton" name="Button_CigPrince_AniFish">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2529,7 +2544,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBluemasterHorse">
+    <Component class="javax.swing.JButton" name="Button_CigBluemaster_AniHorse">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2539,7 +2554,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBluemasterDog">
+    <Component class="javax.swing.JButton" name="Button_CigBluemaster_AniDog">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2549,7 +2564,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBluemasterCat">
+    <Component class="javax.swing.JButton" name="Button_CigBluemaster_AniCat">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2559,7 +2574,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBluemasterBird">
+    <Component class="javax.swing.JButton" name="Button_CigBluemaster_AniBird">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2569,7 +2584,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBluemasterFish">
+    <Component class="javax.swing.JButton" name="Button_CigBluemaster_AniFish">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2579,7 +2594,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDunhillHorse">
+    <Component class="javax.swing.JButton" name="Button_CigDunhill_AniHorse">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2589,7 +2604,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDunhillDog">
+    <Component class="javax.swing.JButton" name="Button_CigDunhill_AniDog">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2599,7 +2614,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDunhillCat">
+    <Component class="javax.swing.JButton" name="Button_CigDunhill_AniCat">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2609,7 +2624,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDunhillBird">
+    <Component class="javax.swing.JButton" name="Button_CigDunhill_AniBird">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2619,7 +2634,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDunhillFish">
+    <Component class="javax.swing.JButton" name="Button_CigDunhill_AniFish">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2629,7 +2644,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBlendsHorse">
+    <Component class="javax.swing.JButton" name="Button_CigBlends_AniHorse">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2639,7 +2654,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBlendsDog">
+    <Component class="javax.swing.JButton" name="Button_CigBlends_AniDog">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2649,7 +2664,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBlendsCat">
+    <Component class="javax.swing.JButton" name="Button_CigBlends_AniCat">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2659,7 +2674,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBlendsBird">
+    <Component class="javax.swing.JButton" name="Button_CigBlends_AniBird">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2669,7 +2684,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBlendsFish">
+    <Component class="javax.swing.JButton" name="Button_CigBlends_AniFish">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2679,7 +2694,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonWaterHorse">
+    <Component class="javax.swing.JButton" name="Button_BevWater_AniHorse">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2689,7 +2704,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonWaterDog">
+    <Component class="javax.swing.JButton" name="Button_BevWater_AniDog">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2699,7 +2714,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonWaterCat">
+    <Component class="javax.swing.JButton" name="Button_BevWater_AniCat">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2709,7 +2724,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonWaterBird">
+    <Component class="javax.swing.JButton" name="Button_BevWater_AniBird">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2719,7 +2734,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonWaterFish">
+    <Component class="javax.swing.JButton" name="Button_BevWater_AniFish">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2729,7 +2744,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonTeaHorse">
+    <Component class="javax.swing.JButton" name="Button_BevTea_AniHorse">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2739,7 +2754,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonTeaDog">
+    <Component class="javax.swing.JButton" name="Button_BevTea_AniDog">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2749,7 +2764,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonTeaCat">
+    <Component class="javax.swing.JButton" name="Button_BevTea_AniCat">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2759,7 +2774,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonTeaBird">
+    <Component class="javax.swing.JButton" name="Button_BevTea_AniBird">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2769,7 +2784,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonTeaFish">
+    <Component class="javax.swing.JButton" name="Button_BevTea_AniFish">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2779,7 +2794,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonMilkHorse">
+    <Component class="javax.swing.JButton" name="Button_BevMilk_AniHorse">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2789,7 +2804,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonMilkDog">
+    <Component class="javax.swing.JButton" name="Button_BevMilk_AniDog">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2799,7 +2814,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonMilkCat">
+    <Component class="javax.swing.JButton" name="Button_BevMilk_AniCat">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2809,7 +2824,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonMilkBird">
+    <Component class="javax.swing.JButton" name="Button_BevMilk_AniBird">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2819,7 +2834,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonMilkFish">
+    <Component class="javax.swing.JButton" name="Button_BevMilk_AniFish">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2829,7 +2844,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonCoffeeHorse">
+    <Component class="javax.swing.JButton" name="Button_BevCoffee_AniHorse">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2839,7 +2854,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonCoffeeDog">
+    <Component class="javax.swing.JButton" name="Button_BevCoffee_AniDog">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2849,7 +2864,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonCoffeeCat">
+    <Component class="javax.swing.JButton" name="Button_BevCoffee_AniCat">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2859,7 +2874,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonCoffeeBird">
+    <Component class="javax.swing.JButton" name="Button_BevCoffee_AniBird">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2869,7 +2884,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonCoffeeFish">
+    <Component class="javax.swing.JButton" name="Button_BevCoffee_AniFish">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2879,7 +2894,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonRootbeerHorse">
+    <Component class="javax.swing.JButton" name="Button_BevRootbeer_AniHorse">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2889,7 +2904,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonRootbeerDog">
+    <Component class="javax.swing.JButton" name="Button_BevRootbeer_AniDog">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2899,7 +2914,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonRootbeerCat">
+    <Component class="javax.swing.JButton" name="Button_BevRootbeer_AniCat">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2909,7 +2924,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonRootbeerBird">
+    <Component class="javax.swing.JButton" name="Button_BevRootbeer_AniBird">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2919,7 +2934,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonRootbeerFish">
+    <Component class="javax.swing.JButton" name="Button_BevRootbeer_AniFish">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2929,7 +2944,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGermanWater">
+    <Component class="javax.swing.JButton" name="Button_NatGerman_BevWater">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2939,7 +2954,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGermanTea">
+    <Component class="javax.swing.JButton" name="Button_NatGerman_BevTea">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2949,7 +2964,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGermanMilk">
+    <Component class="javax.swing.JButton" name="Button_NatGerman_BevMilk">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2959,7 +2974,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGermanCoffee">
+    <Component class="javax.swing.JButton" name="Button_NatGerman_BevCoffee">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2969,7 +2984,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGermanRootbeer">
+    <Component class="javax.swing.JButton" name="Button_NatGerman_BevRootbeer">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2979,7 +2994,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonNorwegianWater">
+    <Component class="javax.swing.JButton" name="Button_NatNorwegian_BevWater">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2989,7 +3004,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonNorwegianTea">
+    <Component class="javax.swing.JButton" name="Button_NatNorwegian_BevTea">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -2999,7 +3014,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonNorwegianMilk">
+    <Component class="javax.swing.JButton" name="Button_NatNorwegian_BevMilk">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3009,7 +3024,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonNorwegianCoffee">
+    <Component class="javax.swing.JButton" name="Button_NatNorwegian_BevCoffee">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3019,7 +3034,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonNorwegianRootbeer">
+    <Component class="javax.swing.JButton" name="Button_NatNorwegian_BevRootbeer">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3029,7 +3044,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonSwedeWater">
+    <Component class="javax.swing.JButton" name="Button_NatSwede_BevWater">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3039,7 +3054,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonSwedeTea">
+    <Component class="javax.swing.JButton" name="Button_NatSwede_BevTea">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3049,7 +3064,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonSwedeMilk">
+    <Component class="javax.swing.JButton" name="Button_NatSwede_BevMilk">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3059,7 +3074,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonSwedeCoffee">
+    <Component class="javax.swing.JButton" name="Button_NatSwede_BevCoffee">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3069,7 +3084,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonSwedeRootbeer">
+    <Component class="javax.swing.JButton" name="Button_NatSwede_BevRootbeer">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3079,7 +3094,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBritWater">
+    <Component class="javax.swing.JButton" name="Button_NatBrit_BevWater">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3089,7 +3104,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBritTea">
+    <Component class="javax.swing.JButton" name="Button_NatBrit_BevTea">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3099,7 +3114,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBritMilk">
+    <Component class="javax.swing.JButton" name="Button_NatBrit_BevMilk">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3109,7 +3124,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBritCoffee">
+    <Component class="javax.swing.JButton" name="Button_NatBrit_BevCoffee">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3119,7 +3134,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBritRootbeer">
+    <Component class="javax.swing.JButton" name="Button_NatBrit_BevRootbeer">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3129,7 +3144,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDaneWater">
+    <Component class="javax.swing.JButton" name="Button_NatDane_BevWater">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3139,7 +3154,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDaneTea">
+    <Component class="javax.swing.JButton" name="Button_NatDane_BevTea">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3149,17 +3164,20 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDaneMilk">
+    <Component class="javax.swing.JButton" name="Button_NatDane_BevMilk">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_NatDane_BevMilkActionPerformed"/>
+      </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
           <GridBagConstraints gridX="18" gridY="8" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="10" weightX="0.0" weightY="0.0"/>
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDaneCoffee">
+    <Component class="javax.swing.JButton" name="Button_NatDane_BevCoffee">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3169,7 +3187,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDaneRootbeer">
+    <Component class="javax.swing.JButton" name="Button_NatDane_BevRootbeer">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3179,7 +3197,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonYellowWater">
+    <Component class="javax.swing.JButton" name="Button_ColYellow_BevWater">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3189,7 +3207,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonYellowTea">
+    <Component class="javax.swing.JButton" name="Button_ColYellow_BevTea">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3199,7 +3217,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonYellowMilk">
+    <Component class="javax.swing.JButton" name="Button_ColYellow_BevMilk">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3209,7 +3227,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonYellowCoffee">
+    <Component class="javax.swing.JButton" name="Button_ColYellow_BevCoffee">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3219,7 +3237,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonYellowRootbeer">
+    <Component class="javax.swing.JButton" name="Button_ColYellow_BevRootbeer">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3229,7 +3247,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBlueWater">
+    <Component class="javax.swing.JButton" name="Button_ColBlue_BevWater">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3239,7 +3257,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBlueTea">
+    <Component class="javax.swing.JButton" name="Button_ColBlue_BevTea">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3249,7 +3267,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBlueMilk">
+    <Component class="javax.swing.JButton" name="Button_ColBlue_BevMilk">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3259,7 +3277,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBlueCoffee">
+    <Component class="javax.swing.JButton" name="Button_ColBlue_BevCoffee">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3269,7 +3287,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBlueRootbeer">
+    <Component class="javax.swing.JButton" name="Button_ColBlue_BevRootbeer">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3279,7 +3297,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonRedWater">
+    <Component class="javax.swing.JButton" name="Button_ColRed_BevWater">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3289,7 +3307,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonRedTea">
+    <Component class="javax.swing.JButton" name="Button_ColRed_BevTea">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3299,7 +3317,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonRedMilk">
+    <Component class="javax.swing.JButton" name="Button_ColRed_BevMilk">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3309,7 +3327,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonRedCoffee">
+    <Component class="javax.swing.JButton" name="Button_ColRed_BevCoffee">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3319,7 +3337,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonRedRootbeer">
+    <Component class="javax.swing.JButton" name="Button_ColRed_BevRootbeer">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3329,7 +3347,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGreenWater">
+    <Component class="javax.swing.JButton" name="Button_ColGreen_BevWater">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3339,7 +3357,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGreenTea">
+    <Component class="javax.swing.JButton" name="Button_ColGreen_BevTea">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3349,7 +3367,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGreenMilk">
+    <Component class="javax.swing.JButton" name="Button_ColGreen_BevMilk">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3359,7 +3377,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGreenCoffee">
+    <Component class="javax.swing.JButton" name="Button_ColGreen_BevCoffee">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3369,12 +3387,12 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGreenRootbeer">
+    <Component class="javax.swing.JButton" name="Button_ColGreen_BevRootbeer">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonGreenRootbeerActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_ColGreen_BevRootbeerActionPerformed"/>
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
@@ -3382,7 +3400,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonWhiteWater">
+    <Component class="javax.swing.JButton" name="Button_ColWhite_BevWater">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3392,7 +3410,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonWhiteTea">
+    <Component class="javax.swing.JButton" name="Button_ColWhite_BevTea">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3402,7 +3420,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonWhiteMilk">
+    <Component class="javax.swing.JButton" name="Button_ColWhite_BevMilk">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3412,7 +3430,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonWhiteCoffee">
+    <Component class="javax.swing.JButton" name="Button_ColWhite_BevCoffee">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3422,7 +3440,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonWhiteRootbeer">
+    <Component class="javax.swing.JButton" name="Button_ColWhite_BevRootbeer">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3432,7 +3450,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonPallmallWater">
+    <Component class="javax.swing.JButton" name="Button_CigPallmall_BevWater">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3442,7 +3460,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonPallmallTea">
+    <Component class="javax.swing.JButton" name="Button_CigPallmall_BevTea">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3452,7 +3470,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonPallmallMilk">
+    <Component class="javax.swing.JButton" name="Button_CigPallmall_BevMilk">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3462,7 +3480,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonPallmallCoffee">
+    <Component class="javax.swing.JButton" name="Button_CigPallmall_BevCoffee">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3472,7 +3490,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonPallmallRootbeer">
+    <Component class="javax.swing.JButton" name="Button_CigPallmall_BevRootbeer">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3482,7 +3500,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonPrinceWater">
+    <Component class="javax.swing.JButton" name="Button_CigPrince_BevWater">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3492,7 +3510,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonPrinceTea">
+    <Component class="javax.swing.JButton" name="Button_CigPrince_BevTea">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3502,7 +3520,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonPrinceMilk">
+    <Component class="javax.swing.JButton" name="Button_CigPrince_BevMilk">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3512,7 +3530,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonPrinceCoffee">
+    <Component class="javax.swing.JButton" name="Button_CigPrince_BevCoffee">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3522,7 +3540,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonPrinceRootbeer">
+    <Component class="javax.swing.JButton" name="Button_CigPrince_BevRootbeer">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3532,7 +3550,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBluemasterWater">
+    <Component class="javax.swing.JButton" name="Button_CigBluemaster_BevWater">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3542,7 +3560,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBluemasterTea">
+    <Component class="javax.swing.JButton" name="Button_CigBluemaster_BevTea">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3552,7 +3570,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBluemasterMilk">
+    <Component class="javax.swing.JButton" name="Button_CigBluemaster_BevMilk">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3562,7 +3580,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBluemasterCoffee">
+    <Component class="javax.swing.JButton" name="Button_CigBluemaster_BevCoffee">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3572,7 +3590,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBluemasterRootbeer">
+    <Component class="javax.swing.JButton" name="Button_CigBluemaster_BevRootbeer">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3582,7 +3600,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDunhillWater">
+    <Component class="javax.swing.JButton" name="Button_CigDunhill_BevWater">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3592,7 +3610,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDunhillTea">
+    <Component class="javax.swing.JButton" name="Button_CigDunhill_BevTea">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3602,7 +3620,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDunhillMilk">
+    <Component class="javax.swing.JButton" name="Button_CigDunhill_BevMilk">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3612,7 +3630,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDunhillCoffee">
+    <Component class="javax.swing.JButton" name="Button_CigDunhill_BevCoffee">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3622,7 +3640,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDunhillRootbeer">
+    <Component class="javax.swing.JButton" name="Button_CigDunhill_BevRootbeer">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3632,7 +3650,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBlendsWater">
+    <Component class="javax.swing.JButton" name="Button_CigBlends_BevWater">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3642,7 +3660,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBlendsTea">
+    <Component class="javax.swing.JButton" name="Button_CigBlends_BevTea">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3652,7 +3670,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBlendsMilk">
+    <Component class="javax.swing.JButton" name="Button_CigBlends_BevMilk">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3662,7 +3680,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBlendsCoffee">
+    <Component class="javax.swing.JButton" name="Button_CigBlends_BevCoffee">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3672,7 +3690,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBlendsRootbeer">
+    <Component class="javax.swing.JButton" name="Button_CigBlends_BevRootbeer">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3682,7 +3700,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGermanPallmall">
+    <Component class="javax.swing.JButton" name="Button_NatGerman_CigPallmall">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3692,7 +3710,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGermanPrince">
+    <Component class="javax.swing.JButton" name="Button_NatGerman_CigPrince">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3702,7 +3720,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGermanBluemaster">
+    <Component class="javax.swing.JButton" name="Button_NatGerman_CigBluemaster">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3712,7 +3730,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGermanDunhill">
+    <Component class="javax.swing.JButton" name="Button_NatGerman_CigDunhill">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3722,7 +3740,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGermanBlends">
+    <Component class="javax.swing.JButton" name="Button_NatGerman_CigBlends">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3732,7 +3750,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonNorwegianPallmall">
+    <Component class="javax.swing.JButton" name="Button_NatNorwegian_CigPallmall">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3742,7 +3760,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonNorwegianPrince">
+    <Component class="javax.swing.JButton" name="Button_NatNorwegian_CigPrince">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3752,7 +3770,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonNorwegianBlueMaster">
+    <Component class="javax.swing.JButton" name="Button_NatNorwegian_CigBlueMaster">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3762,7 +3780,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonNorwegianDunhill">
+    <Component class="javax.swing.JButton" name="Button_NatNorwegian_CigDunhill">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3772,7 +3790,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonNorwegianBlends">
+    <Component class="javax.swing.JButton" name="Button_NatNorwegian_CigBlends">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3782,7 +3800,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonSwedePallmall">
+    <Component class="javax.swing.JButton" name="Button_NatSwede_CigPallmall">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3792,7 +3810,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonSwedePrince">
+    <Component class="javax.swing.JButton" name="Button_NatSwede_CigPrince">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3802,7 +3820,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonSwedeBluemaster">
+    <Component class="javax.swing.JButton" name="Button_NatSwede_CigBluemaster">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3812,7 +3830,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonSwedeDunhill">
+    <Component class="javax.swing.JButton" name="Button_NatSwede_CigDunhill">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3822,7 +3840,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonSwedeBlends">
+    <Component class="javax.swing.JButton" name="Button_NatSwede_CigBlends">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3832,7 +3850,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBritPallmall">
+    <Component class="javax.swing.JButton" name="Button_NatBrit_CigPallmall">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3842,7 +3860,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBritPrince">
+    <Component class="javax.swing.JButton" name="Button_NatBrit_CigPrince">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3852,7 +3870,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBritBluemaster">
+    <Component class="javax.swing.JButton" name="Button_NatBrit_CigBluemaster">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3862,7 +3880,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBritDunhill">
+    <Component class="javax.swing.JButton" name="Button_NatBrit_CigDunhill">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3872,7 +3890,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBritBlends">
+    <Component class="javax.swing.JButton" name="Button_NatBrit_CigBlends">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3882,7 +3900,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDanePallmall">
+    <Component class="javax.swing.JButton" name="Button_NatDane_CigPallmall">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3892,7 +3910,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDanePrince">
+    <Component class="javax.swing.JButton" name="Button_NatDane_CigPrince">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3902,7 +3920,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDaneBluemaster">
+    <Component class="javax.swing.JButton" name="Button_NatDane_CigBluemaster">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3912,7 +3930,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDaneDunhill">
+    <Component class="javax.swing.JButton" name="Button_NatDane_CigDunhill">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3922,7 +3940,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDaneBlends">
+    <Component class="javax.swing.JButton" name="Button_NatDane_CigBlends">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3932,7 +3950,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonYellowPallmall">
+    <Component class="javax.swing.JButton" name="Button_ColYellow_CigPallmall">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3942,7 +3960,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonYellowPrince">
+    <Component class="javax.swing.JButton" name="Button_ColYellow_CigPrince">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3952,7 +3970,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonYellowBluemaster">
+    <Component class="javax.swing.JButton" name="Button_ColYellow_CigBluemaster">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3962,7 +3980,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonYellowDunhill">
+    <Component class="javax.swing.JButton" name="Button_ColYellow_CigDunhill">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3972,17 +3990,20 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonYellowBlends">
+    <Component class="javax.swing.JButton" name="Button_ColYellow_CigBlends">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_ColYellow_CigBlendsActionPerformed"/>
+      </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
           <GridBagConstraints gridX="26" gridY="10" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="10" weightX="0.0" weightY="0.0"/>
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBluePallmall">
+    <Component class="javax.swing.JButton" name="Button_ColBlue_CigPallmall">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -3992,7 +4013,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBluePrince">
+    <Component class="javax.swing.JButton" name="Button_ColBlue_CigPrince">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4002,7 +4023,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBlueBluemaster">
+    <Component class="javax.swing.JButton" name="Button_ColBlue_CigBluemaster">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4012,7 +4033,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBlueDunhill">
+    <Component class="javax.swing.JButton" name="Button_ColBlue_CigDunhill">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4022,7 +4043,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBlueBlends">
+    <Component class="javax.swing.JButton" name="Button_ColBlue_CigBlends">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4032,7 +4053,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonRedPallmall">
+    <Component class="javax.swing.JButton" name="Button_ColRed_CigPallmall">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4042,7 +4063,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonRedPrince">
+    <Component class="javax.swing.JButton" name="Button_ColRed_CigPrince">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4052,7 +4073,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonRedBluemaster">
+    <Component class="javax.swing.JButton" name="Button_ColRed_CigBluemaster">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4062,7 +4083,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonRedDunhill">
+    <Component class="javax.swing.JButton" name="Button_ColRed_CigDunhill">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4072,7 +4093,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonRedBlends">
+    <Component class="javax.swing.JButton" name="Button_ColRed_CigBlends">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4082,7 +4103,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGreenPallmall">
+    <Component class="javax.swing.JButton" name="Button_ColGreen_CigPallmall">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4092,7 +4113,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGreenPrince">
+    <Component class="javax.swing.JButton" name="Button_ColGreen_CigPrince">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4102,7 +4123,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGreenBluemaster">
+    <Component class="javax.swing.JButton" name="Button_ColGreen_CigBluemaster">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4112,7 +4133,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGreenDunhill">
+    <Component class="javax.swing.JButton" name="Button_ColGreen_CigDunhill">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4122,7 +4143,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGreenBlends">
+    <Component class="javax.swing.JButton" name="Button_ColGreen_CigBlends">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4132,7 +4153,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonWhitePallmall">
+    <Component class="javax.swing.JButton" name="Button_ColWhite_CigPallmall">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4142,7 +4163,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonWhitePrince">
+    <Component class="javax.swing.JButton" name="Button_ColWhite_CigPrince">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4152,7 +4173,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonWhiteBluemaster">
+    <Component class="javax.swing.JButton" name="Button_ColWhite_CigBluemaster">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4162,7 +4183,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonWhiteDunhill">
+    <Component class="javax.swing.JButton" name="Button_ColWhite_CigDunhill">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4172,17 +4193,20 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonWhiteBlends">
+    <Component class="javax.swing.JButton" name="Button_ColWhite_CigBlends">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_ColWhite_CigBlendsActionPerformed"/>
+      </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
           <GridBagConstraints gridX="26" gridY="14" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="10" weightX="0.0" weightY="0.0"/>
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGermanYellow">
+    <Component class="javax.swing.JButton" name="Button_NatGerman_ColYellow">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4192,7 +4216,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGermanBlue">
+    <Component class="javax.swing.JButton" name="Button_NatGerman_ColBlue">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4202,7 +4226,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGermanRed">
+    <Component class="javax.swing.JButton" name="Button_NatGerman_ColRed">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4212,7 +4236,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGermanGreen">
+    <Component class="javax.swing.JButton" name="Button_NatGerman_ColGreen">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4222,7 +4246,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonGermanWhite">
+    <Component class="javax.swing.JButton" name="Button_NatGerman_ColWhite">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4232,7 +4256,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonNorwegianYellow">
+    <Component class="javax.swing.JButton" name="Button_NatNorwegian_ColYellow">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4242,7 +4266,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonNorwegianBlue">
+    <Component class="javax.swing.JButton" name="Button_NatNorwegian_ColBlue">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4252,7 +4276,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonNorwegianRed">
+    <Component class="javax.swing.JButton" name="Button_NatNorwegian_ColRed">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4262,7 +4286,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonNorwegianGreen">
+    <Component class="javax.swing.JButton" name="Button_NatNorwegian_ColGreen">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4272,7 +4296,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonNorwegianWhite">
+    <Component class="javax.swing.JButton" name="Button_NatNorwegian_ColWhite">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4282,7 +4306,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonSwedeYellow">
+    <Component class="javax.swing.JButton" name="Button_NatSwede_ColYellow">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4292,7 +4316,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonSwedeBlue">
+    <Component class="javax.swing.JButton" name="Button_NatSwede_ColBlue">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4302,7 +4326,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonSwedeRed">
+    <Component class="javax.swing.JButton" name="Button_NatSwede_ColRed">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4312,7 +4336,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonSwedeGreen">
+    <Component class="javax.swing.JButton" name="Button_NatSwede_ColGreen">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4322,7 +4346,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonSwedeWhite">
+    <Component class="javax.swing.JButton" name="Button_NatSwede_ColWhite">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4332,7 +4356,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBritYellow">
+    <Component class="javax.swing.JButton" name="Button_NatBrit_ColYellow">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4342,7 +4366,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBritBlue">
+    <Component class="javax.swing.JButton" name="Button_NatBrit_ColBlue">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4352,7 +4376,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBritRed">
+    <Component class="javax.swing.JButton" name="Button_NatBrit_ColRed">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4362,7 +4386,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBritGreen">
+    <Component class="javax.swing.JButton" name="Button_NatBrit_ColGreen">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4372,7 +4396,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonBritWhite">
+    <Component class="javax.swing.JButton" name="Button_NatBrit_ColWhite">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4382,7 +4406,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDaneYellow">
+    <Component class="javax.swing.JButton" name="Button_NatDane_ColYellow">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4392,7 +4416,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDaneBlue">
+    <Component class="javax.swing.JButton" name="Button_NatDane_ColBlue">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4402,7 +4426,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDaneRed">
+    <Component class="javax.swing.JButton" name="Button_NatDane_ColRed">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4412,7 +4436,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDaneGreen">
+    <Component class="javax.swing.JButton" name="Button_NatDane_Green">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
@@ -4422,7 +4446,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="ButtonDaneWhite">
+    <Component class="javax.swing.JButton" name="Button_NatDane_ColWhite">
       <Properties>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
