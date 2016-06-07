@@ -24,6 +24,7 @@ public class PuzzleGui extends javax.swing.JFrame
     public PuzzleGui()
     {
 	initComponents();
+	setupMainButtonListener(ver);
     }
 
     /**
@@ -489,6 +490,174 @@ public class PuzzleGui extends javax.swing.JFrame
         ButtonSystemRedo = new javax.swing.JButton();
         ButtonSystemClear = new javax.swing.JButton();
         ButtonSystemDefault = new javax.swing.JButton();
+
+        BirdNum = new JButton[] {Button_AniBird_Num1, Button_AniBird_Num2, Button_AniBird_Num3, Button_AniBird_Num4, Button_AniBird_Num5};
+		CatNum = new JButton[] {Button_AniCat_Num1, Button_AniCat_Num2, Button_AniCat_Num3, Button_AniCat_Num4, Button_AniCat_Num5};
+		DogNum = new JButton[] {Button_AniDog_Num1, Button_AniDog_Num2, Button_AniDog_Num3, Button_AniDog_Num4, Button_AniDog_Num5};
+		FishNum = new JButton[] {Button_AniFish_Num1, Button_AniFish_Num2, Button_AniFish_Num3, Button_AniFish_Num4, Button_AniFish_Num5};
+		HorseNum = new JButton[] {Button_AniHorse_Num1, Button_AniHorse_Num2, Button_AniHorse_Num3, Button_AniHorse_Num4, Button_AniHorse_Num5};
+		CoffeeAni = new JButton[] {Button_BevCoffee_AniBird, Button_BevCoffee_AniCat, Button_BevCoffee_AniDog, Button_BevCoffee_AniFish, Button_BevCoffee_AniHorse};
+		CoffeeNum = new JButton[] {Button_BevCoffee_Num1, Button_BevCoffee_Num2, Button_BevCoffee_Num3, Button_BevCoffee_Num4, Button_BevCoffee_Num5};
+		MilkAni = new JButton[] {Button_BevMilk_AniBird, Button_BevMilk_AniCat, Button_BevMilk_AniDog, Button_BevMilk_AniFish, Button_BevMilk_AniHorse};
+		MilkNum = new JButton[] {Button_BevMilk_Num1, Button_BevMilk_Num2, Button_BevMilk_Num3, Button_BevMilk_Num4, Button_BevMilk_Num5};
+		RootbeerAni = new JButton[] {Button_BevRootbeer_AniBird, Button_BevRootbeer_AniCat, Button_BevRootbeer_AniDog, Button_BevRootbeer_AniFish, Button_BevRootbeer_AniHorse};
+		RootbeerNum = new JButton[] {Button_BevRootbeer_Num1, Button_BevRootbeer_Num2, Button_BevRootbeer_Num3, Button_BevRootbeer_Num4, Button_BevRootbeer_Num5};
+		TeaAni = new JButton[] {Button_BevTea_AniBird, Button_BevTea_AniCat, Button_BevTea_AniDog, Button_BevTea_AniFish, Button_BevTea_AniHorse};
+		TeaNum = new JButton[] {Button_BevTea_Num1, Button_BevTea_Num2, Button_BevTea_Num3, Button_BevTea_Num4, Button_BevTea_Num5};
+		WaterAni = new JButton[] {Button_BevWater_AniBird, Button_BevWater_AniCat, Button_BevWater_AniDog, Button_BevWater_AniFish, Button_BevWater_AniHorse};
+		WaterNum = new JButton[] {Button_BevWater_Num1, Button_BevWater_Num2, Button_BevWater_Num3, Button_BevWater_Num4, Button_BevWater_Num5};
+		BlendsAni = new JButton[] {Button_CigBlends_AniBird, Button_CigBlends_AniCat, Button_CigBlends_AniDog, Button_CigBlends_AniFish, Button_CigBlends_AniHorse};
+		BlendsBev = new JButton[] {Button_CigBlends_BevCoffee, Button_CigBlends_BevMilk, Button_CigBlends_BevRootbeer, Button_CigBlends_BevTea, Button_CigBlends_BevWater};
+		BlendsNum = new JButton[] {Button_CigBlends_Num1, Button_CigBlends_Num2, Button_CigBlends_Num3, Button_CigBlends_Num4, Button_CigBlends_Num5};
+		BluemasterAni = new JButton[] {Button_CigBluemaster_AniBird, Button_CigBluemaster_AniCat, Button_CigBluemaster_AniDog, Button_CigBluemaster_AniFish, Button_CigBluemaster_AniHorse};
+		BluemasterBev = new JButton[] {Button_CigBluemaster_BevCoffee, Button_CigBluemaster_BevMilk, Button_CigBluemaster_BevRootbeer, Button_CigBluemaster_BevTea, Button_CigBluemaster_BevWater};
+		BlueMasterNum = new JButton[] {Button_CigBluemaster_Num1, Button_CigBluemaster_Num2, Button_CigBluemaster_Num3, Button_CigBluemaster_Num4, Button_CigBluemaster_Num5};
+		DunhillAni = new JButton[] {Button_CigDunhill_AniBird, Button_CigDunhill_AniCat, Button_CigDunhill_AniDog, Button_CigDunhill_AniFish, Button_CigDunhill_AniHorse};
+		DunhillBev = new JButton[] {Button_CigDunhill_BevCoffee, Button_CigDunhill_BevMilk, Button_CigDunhill_BevRootbeer, Button_CigDunhill_BevTea, Button_CigDunhill_BevWater};
+		DunhillNum = new JButton[] {Button_CigDunhill_Num1, Button_CigDunhill_Num2, Button_CigDunhill_Num3, Button_CigDunhill_Num4, Button_CigDunhill_Num5};
+		PallmallAni = new JButton[] {Button_CigPallmall_AniBird, Button_CigPallmall_AniCat, Button_CigPallmall_AniDog, Button_CigPallmall_AniFish, Button_CigPallmall_AniHorse};
+		PallmallBev = new JButton[] {Button_CigPallmall_BevCoffee, Button_CigPallmall_BevMilk, Button_CigPallmall_BevRootbeer, Button_CigPallmall_BevTea, Button_CigPallmall_BevWater};
+		PallmallNum = new JButton[] {Button_CigPallmall_Num1, Button_CigPallmall_Num2, Button_CigPallmall_Num3, Button_CigPallmall_Num4, Button_CigPallmall_Num5};
+		PrinceAni = new JButton[] {Button_CigPrince_AniBird, Button_CigPrince_AniCat, Button_CigPrince_AniDog, Button_CigPrince_AniFish, Button_CigPrince_AniHorse};
+		PrinceBev = new JButton[] {Button_CigPrince_BevCoffee, Button_CigPrince_BevMilk, Button_CigPrince_BevRootbeer, Button_CigPrince_BevTea, Button_CigPrince_BevWater};
+		PrinceNum = new JButton[] {Button_CigPrince_Num1, Button_CigPrince_Num2, Button_CigPrince_Num3, Button_CigPrince_Num4, Button_CigPrince_Num5};
+		BlueAni = new JButton[] {Button_ColBlue_AniBird, Button_ColBlue_AniCat, Button_ColBlue_AniDog, Button_ColBlue_AniFish, Button_ColBlue_AniHorse};
+		BlueBev = new JButton[] {Button_ColBlue_BevCoffee, Button_ColBlue_BevMilk, Button_ColBlue_BevRootbeer, Button_ColBlue_BevTea, Button_ColBlue_BevWater};
+		BlueCig = new JButton[] {Button_ColBlue_CigBlends, Button_ColBlue_CigBluemaster, Button_ColBlue_CigDunhill, Button_ColBlue_CigPallmall, Button_ColBlue_CigPrince};
+		BlueNum = new JButton[] {Button_ColBlue_Num1, Button_ColBlue_Num2, Button_ColBlue_Num3, Button_ColBlue_Num4, Button_ColBlue_Num5};
+		GreenAni = new JButton[] {Button_ColGreen_AniBird, Button_ColGreen_AniCat, Button_ColGreen_AniDog, Button_ColGreen_AniFish, Button_ColGreen_AniHorse};
+		GreenBev = new JButton[] {Button_ColGreen_BevCoffee, Button_ColGreen_BevMilk, Button_ColGreen_BevRootbeer, Button_ColGreen_BevTea, Button_ColGreen_BevWater};
+		GreenCig = new JButton[] {Button_ColGreen_CigBlends, Button_ColGreen_CigBluemaster, Button_ColGreen_CigDunhill, Button_ColGreen_CigPallmall, Button_ColGreen_CigPrince};
+		GreenNum = new JButton[] {Button_ColGreen_Num1, Button_ColGreen_Num2, Button_ColGreen_Num3, Button_ColGreen_Num4, Button_ColGreen_Num5};
+		RedAni = new JButton[] {Button_ColRed_AniBird, Button_ColRed_AniCat, Button_ColRed_AniDog, Button_ColRed_AniFish, Button_ColRed_AniHorse};
+		RedBev = new JButton[] {Button_ColRed_BevCoffee, Button_ColRed_BevMilk, Button_ColRed_BevRootbeer, Button_ColRed_BevTea, Button_ColRed_BevWater};
+		RedCig = new JButton[] {Button_ColRed_CigBlends, Button_ColRed_CigBluemaster, Button_ColRed_CigDunhill, Button_ColRed_CigPallmall, Button_ColRed_CigPrince};
+		RedNum = new JButton[] {Button_ColRed_Num1, Button_ColRed_Num2, Button_ColRed_Num3, Button_ColRed_Num4, Button_ColRed_Num5};
+		WhiteAni = new JButton[] {Button_ColWhite_AniBird, Button_ColWhite_AniCat, Button_ColWhite_AniDog, Button_ColWhite_AniFish, Button_ColWhite_AniHorse};
+		WhiteBev = new JButton[] {Button_ColWhite_BevCoffee, Button_ColWhite_BevMilk, Button_ColWhite_BevRootbeer, Button_ColWhite_BevTea, Button_ColWhite_BevWater};
+		WhiteCig = new JButton[] {Button_ColWhite_CigBlends, Button_ColWhite_CigBluemaster, Button_ColWhite_CigDunhill, Button_ColWhite_CigPallmall, Button_ColWhite_CigPrince};
+		WhiteNum = new JButton[] {Button_ColWhite_Num1, Button_ColWhite_Num2, Button_ColWhite_Num3, Button_ColWhite_Num4, Button_ColWhite_Num5};
+		YellowAni = new JButton[] {Button_ColYellow_AniBird, Button_ColYellow_AniCat, Button_ColYellow_AniDog, Button_ColYellow_AniFish, Button_ColYellow_AniHorse};
+		YellowBev = new JButton[] {Button_ColYellow_BevCoffee, Button_ColYellow_BevMilk, Button_ColYellow_BevRootbeer, Button_ColYellow_BevTea, Button_ColYellow_BevWater};
+		YellowCig = new JButton[] {Button_ColYellow_CigBlends, Button_ColYellow_CigBluemaster, Button_ColYellow_CigDunhill, Button_ColYellow_CigPallmall, Button_ColYellow_CigPrince};
+		YellowNum = new JButton[] {Button_ColYellow_Num1, Button_ColYellow_Num2, Button_ColYellow_Num3, Button_ColYellow_Num4, Button_ColYellow_Num5};
+		BritAni = new JButton[] {Button_NatBrit_AniBird, Button_NatBrit_AniCat, Button_NatBrit_AniDog, Button_NatBrit_AniFish, Button_NatBrit_AniHorse};
+		BritBev = new JButton[] {Button_NatBrit_BevCoffee, Button_NatBrit_BevMilk, Button_NatBrit_BevRootbeer, Button_NatBrit_BevTea, Button_NatBrit_BevWater};
+		BritCig = new JButton[] {Button_NatBrit_CigBlends, Button_NatBrit_CigBluemaster, Button_NatBrit_CigDunhill, Button_NatBrit_CigPallmall, Button_NatBrit_CigPrince};
+		BritCol = new JButton[] {Button_NatBrit_ColBlue, Button_NatBrit_ColGreen, Button_NatBrit_ColRed, Button_NatBrit_ColWhite, Button_NatBrit_ColYellow};
+		BritNum = new JButton[] {Button_NatBrit_Num1, Button_NatBrit_Num2, Button_NatBrit_Num3, Button_NatBrit_Num4, Button_NatBrit_Num5};
+		DaneAni = new JButton[] {Button_NatDane_AniBird, Button_NatDane_AniCat, Button_NatDane_AniDog, Button_NatDane_AniFish, Button_NatDane_AniHorse};
+		DaneBev = new JButton[] {Button_NatDane_BevCoffee, Button_NatDane_BevMilk, Button_NatDane_BevRootbeer, Button_NatDane_BevTea, Button_NatDane_BevWater};
+		DaneCig = new JButton[] {Button_NatDane_CigBlends, Button_NatDane_CigBluemaster, Button_NatDane_CigDunhill, Button_NatDane_CigPallmall, Button_NatDane_CigPrince};
+		DaneCol = new JButton[] {Button_NatDane_ColBlue, Button_NatDane_ColRed, Button_NatDane_ColWhite, Button_NatDane_ColYellow, Button_NatDane_Green};
+		DaneNum = new JButton[] {Button_NatDane_Num1, Button_NatDane_Num2, Button_NatDane_Num3, Button_NatDane_Num4, Button_NatDane_Num5};
+		GermanAni = new JButton[] {Button_NatGerman_AniBird, Button_NatGerman_AniCat, Button_NatGerman_AniDog, Button_NatGerman_AniFish, Button_NatGerman_AniHorse};
+		GermanBev = new JButton[] {Button_NatGerman_BevCoffee, Button_NatGerman_BevMilk, Button_NatGerman_BevRootbeer, Button_NatGerman_BevTea, Button_NatGerman_BevWater};
+		GermanCig = new JButton[] {Button_NatGerman_CigBlends, Button_NatGerman_CigBluemaster, Button_NatGerman_CigDunhill, Button_NatGerman_CigPallmall, Button_NatGerman_CigPrince};
+		GermanCol = new JButton[] {Button_NatGerman_ColBlue, Button_NatGerman_ColGreen, Button_NatGerman_ColRed, Button_NatGerman_ColWhite, Button_NatGerman_ColYellow};
+		GermanNum = new JButton[] {Button_NatGerman_Num1, Button_NatGerman_Num2, Button_NatGerman_Num3, Button_NatGerman_Num4, Button_NatGerman_Num5};
+		NorwegianAni = new JButton[] {Button_NatNorwegian_AniBird, Button_NatNorwegian_AniCat, Button_NatNorwegian_AniDog, Button_NatNorwegian_AniFish, Button_NatNorwegian_AniHorse};
+		NorwegianBev = new JButton[] {Button_NatNorwegian_BevCoffee, Button_NatNorwegian_BevMilk, Button_NatNorwegian_BevRootbeer, Button_NatNorwegian_BevTea, Button_NatNorwegian_BevWater};
+		NorwegianCig = new JButton[] {Button_NatNorwegian_CigBlends, Button_NatNorwegian_CigBlueMaster, Button_NatNorwegian_CigDunhill, Button_NatNorwegian_CigPallmall, Button_NatNorwegian_CigPrince};
+		NorwegianCol = new JButton[] {Button_NatNorwegian_ColBlue, Button_NatNorwegian_ColGreen, Button_NatNorwegian_ColRed, Button_NatNorwegian_ColWhite, Button_NatNorwegian_ColYellow};
+		NorwegianNum = new JButton[] {Button_NatNorwegian_Num1, Button_NatNorwegian_Num2, Button_NatNorwegian_Num3, Button_NatNorwegian_Num4, Button_NatNorwegian_Num5};
+		SwedeAni = new JButton[] {Button_NatSwede_AniBird, Button_NatSwede_AniCat, Button_NatSwede_AniDog, Button_NatSwede_AniFish, Button_NatSwede_AniHorse};
+		SwedeBev = new JButton[] {Button_NatSwede_BevCoffee, Button_NatSwede_BevMilk, Button_NatSwede_BevRootbeer, Button_NatSwede_BevTea, Button_NatSwede_BevWater};
+		SwedeCig = new JButton[] {Button_NatSwede_CigBlends, Button_NatSwede_CigBluemaster, Button_NatSwede_CigDunhill, Button_NatSwede_CigPallmall, Button_NatSwede_CigPrince};
+		SwedeCol = new JButton[] {Button_NatSwede_ColBlue, Button_NatSwede_ColGreen, Button_NatSwede_ColRed, Button_NatSwede_ColWhite, Button_NatSwede_ColYellow};
+		SwedeNum = new JButton[] {Button_NatSwede_Num1, Button_NatSwede_Num2, Button_NatSwede_Num3, Button_NatSwede_Num4, Button_NatSwede_Num5};
+
+		hAni = new JButton[][] {HorseNum, DogNum, CatNum, BirdNum, FishNum};
+		hBev = new JButton[][] {WaterNum, WaterAni, TeaNum, TeaAni, MilkNum, MilkAni, CoffeeNum, CoffeeAni, RootbeerNum, RootbeerAni};
+		hCig = new JButton[][] {PallmallNum, PallmallAni, PallmallBev, PrinceNum, PrinceAni, PrinceBev, BlueMasterNum, BluemasterAni, BluemasterBev, DunhillNum, DunhillAni, DunhillBev, BlendsNum, BlendsAni, BlendsBev};
+		hCol = new JButton[][] {YellowNum, YellowAni, YellowBev, YellowCig, BlueNum, BlueAni, BlueBev, BlueCig, RedNum, RedAni, RedBev, RedCig, GreenNum, GreenAni, GreenBev, GreenCig, WhiteNum, WhiteAni, WhiteBev, WhiteCig};
+		hNat = new JButton[][] {GermanNum, GermanAni, GermanBev, GermanCig, GermanCol, NorwegianNum, NorwegianAni, NorwegianBev, NorwegianCig, NorwegianCol, SwedeNum, SwedeAni, SwedeBev, SwedeCig, SwedeCol, BritNum, BritAni, BritBev, BritCig, BritCol, DaneNum, DaneAni, DaneBev, DaneCig, DaneCol};
+		hor = new JButton[][][] {hNat, hCol, hCig, hBev, hAni};
+
+		OneAni = new JButton[] {Button_AniBird_Num1, Button_AniCat_Num1, Button_AniDog_Num1, Button_AniFish_Num1, Button_AniHorse_Num1};
+		TwoAni = new JButton[] {Button_AniBird_Num2, Button_AniCat_Num2, Button_AniDog_Num2, Button_AniFish_Num2, Button_AniHorse_Num2};
+		ThreeAni = new JButton[] {Button_AniBird_Num3, Button_AniCat_Num3, Button_AniDog_Num3, Button_AniFish_Num3, Button_AniHorse_Num3};
+		FourAni = new JButton[] {Button_AniBird_Num4, Button_AniCat_Num4, Button_AniDog_Num4, Button_AniFish_Num4, Button_AniHorse_Num4};
+		FiveAni = new JButton[] {Button_AniBird_Num5, Button_AniCat_Num5, Button_AniDog_Num5, Button_AniFish_Num5, Button_AniHorse_Num5};
+		OneBev = new JButton[] {Button_BevCoffee_Num1, Button_BevMilk_Num1, Button_BevRootbeer_Num1, Button_BevTea_Num1, Button_BevWater_Num1};
+		TwoBev = new JButton[] {Button_BevCoffee_Num2, Button_BevMilk_Num2, Button_BevRootbeer_Num2, Button_BevTea_Num2, Button_BevWater_Num2};
+		ThreeBev = new JButton[] {Button_BevCoffee_Num3, Button_BevMilk_Num3, Button_BevRootbeer_Num3, Button_BevTea_Num3, Button_BevWater_Num3};
+		FourBev = new JButton[] {Button_BevCoffee_Num4, Button_BevMilk_Num4, Button_BevRootbeer_Num4, Button_BevTea_Num4, Button_BevWater_Num4};
+		FiveBev = new JButton[] {Button_BevCoffee_Num5, Button_BevMilk_Num5, Button_BevRootbeer_Num5, Button_BevTea_Num5, Button_BevWater_Num5};
+		OneCig = new JButton[] {Button_CigBlends_Num1, Button_CigBluemaster_Num1, Button_CigDunhill_Num1, Button_CigPallmall_Num1, Button_CigPrince_Num1};
+		TwoCig = new JButton[] {Button_CigBlends_Num2, Button_CigBluemaster_Num2, Button_CigDunhill_Num2, Button_CigPallmall_Num2, Button_CigPrince_Num2};
+		ThreeCig = new JButton[] {Button_CigBlends_Num3, Button_CigBluemaster_Num3, Button_CigDunhill_Num3, Button_CigPallmall_Num3, Button_CigPrince_Num3};
+		FourCig = new JButton[] {Button_CigBlends_Num4, Button_CigBluemaster_Num4, Button_CigDunhill_Num4, Button_CigPallmall_Num4, Button_CigPrince_Num4};
+		FiveCig = new JButton[] {Button_CigBlends_Num5, Button_CigBluemaster_Num5, Button_CigDunhill_Num5, Button_CigPallmall_Num5, Button_CigPrince_Num5};
+		OneCol = new JButton[] {Button_ColBlue_Num1, Button_ColGreen_Num1, Button_ColRed_Num1, Button_ColWhite_Num1, Button_ColYellow_Num1};
+		TwoCol = new JButton[] {Button_ColBlue_Num2, Button_ColGreen_Num2, Button_ColRed_Num2, Button_ColWhite_Num2, Button_ColYellow_Num2};
+		ThreeCol = new JButton[] {Button_ColBlue_Num3, Button_ColGreen_Num3, Button_ColRed_Num3, Button_ColWhite_Num3, Button_ColYellow_Num3};
+		FourCol = new JButton[] {Button_ColBlue_Num4, Button_ColGreen_Num4, Button_ColRed_Num4, Button_ColWhite_Num4, Button_ColYellow_Num4};
+		FiveCol = new JButton[] {Button_ColBlue_Num5, Button_ColGreen_Num5, Button_ColRed_Num5, Button_ColWhite_Num5, Button_ColYellow_Num5};
+		OneNat = new JButton[] {Button_NatBrit_Num1, Button_NatDane_Num1, Button_NatGerman_Num1, Button_NatNorwegian_Num1, Button_NatSwede_Num1};
+		TwoNat = new JButton[] {Button_NatBrit_Num2, Button_NatDane_Num2, Button_NatGerman_Num2, Button_NatNorwegian_Num2, Button_NatSwede_Num2};
+		ThreeNat = new JButton[] {Button_NatBrit_Num3, Button_NatDane_Num3, Button_NatGerman_Num3, Button_NatNorwegian_Num3, Button_NatSwede_Num3};
+		FourNat = new JButton[] {Button_NatBrit_Num4, Button_NatDane_Num4, Button_NatGerman_Num4, Button_NatNorwegian_Num4, Button_NatSwede_Num4};
+		FiveNat = new JButton[] {Button_NatBrit_Num5, Button_NatDane_Num5, Button_NatGerman_Num5, Button_NatNorwegian_Num5, Button_NatSwede_Num5};
+		BirdBev = new JButton[] {Button_BevCoffee_AniBird, Button_BevMilk_AniBird, Button_BevRootbeer_AniBird, Button_BevTea_AniBird, Button_BevWater_AniBird};
+		CatBev = new JButton[] {Button_BevCoffee_AniCat, Button_BevMilk_AniCat, Button_BevRootbeer_AniCat, Button_BevTea_AniCat, Button_BevWater_AniCat};
+		DogBev = new JButton[] {Button_BevCoffee_AniDog, Button_BevMilk_AniDog, Button_BevRootbeer_AniDog, Button_BevTea_AniDog, Button_BevWater_AniDog};
+		FishBev = new JButton[] {Button_BevCoffee_AniFish, Button_BevMilk_AniFish, Button_BevRootbeer_AniFish, Button_BevTea_AniFish, Button_BevWater_AniFish};
+		HorseBev = new JButton[] {Button_BevCoffee_AniHorse, Button_BevMilk_AniHorse, Button_BevRootbeer_AniHorse, Button_BevTea_AniHorse, Button_BevWater_AniHorse};
+		BirdCig = new JButton[] {Button_CigBlends_AniBird, Button_CigBluemaster_AniBird, Button_CigDunhill_AniBird, Button_CigPallmall_AniBird, Button_CigPrince_AniBird};
+		CatCig = new JButton[] {Button_CigBlends_AniCat, Button_CigBluemaster_AniCat, Button_CigDunhill_AniCat, Button_CigPallmall_AniCat, Button_CigPrince_AniCat};
+		DogCig = new JButton[] {Button_CigBlends_AniDog, Button_CigBluemaster_AniDog, Button_CigDunhill_AniDog, Button_CigPallmall_AniDog, Button_CigPrince_AniDog};
+		FishCig = new JButton[] {Button_CigBlends_AniFish, Button_CigBluemaster_AniFish, Button_CigDunhill_AniFish, Button_CigPallmall_AniFish, Button_CigPrince_AniFish};
+		HorseCig = new JButton[] {Button_CigBlends_AniHorse, Button_CigBluemaster_AniHorse, Button_CigDunhill_AniHorse, Button_CigPallmall_AniHorse, Button_CigPrince_AniHorse};
+		BirdCol = new JButton[] {Button_ColBlue_AniBird, Button_ColGreen_AniBird, Button_ColRed_AniBird, Button_ColWhite_AniBird, Button_ColYellow_AniBird};
+		CatCol = new JButton[] {Button_ColBlue_AniCat, Button_ColGreen_AniCat, Button_ColRed_AniCat, Button_ColWhite_AniCat, Button_ColYellow_AniCat};
+		DogCol = new JButton[] {Button_ColBlue_AniDog, Button_ColGreen_AniDog, Button_ColRed_AniDog, Button_ColWhite_AniDog, Button_ColYellow_AniDog};
+		FishCol = new JButton[] {Button_ColBlue_AniFish, Button_ColGreen_AniFish, Button_ColRed_AniFish, Button_ColWhite_AniFish, Button_ColYellow_AniFish};
+		HorseCol = new JButton[] {Button_ColBlue_AniHorse, Button_ColGreen_AniHorse, Button_ColRed_AniHorse, Button_ColWhite_AniHorse, Button_ColYellow_AniHorse};
+		BirdNat = new JButton[] {Button_NatBrit_AniBird, Button_NatDane_AniBird, Button_NatGerman_AniBird, Button_NatNorwegian_AniBird, Button_NatSwede_AniBird};
+		CatNat = new JButton[] {Button_NatBrit_AniCat, Button_NatDane_AniCat, Button_NatGerman_AniCat, Button_NatNorwegian_AniCat, Button_NatSwede_AniCat};
+		DogNat = new JButton[] {Button_NatBrit_AniDog, Button_NatDane_AniDog, Button_NatGerman_AniDog, Button_NatNorwegian_AniDog, Button_NatSwede_AniDog};
+		FishNat = new JButton[] {Button_NatBrit_AniFish, Button_NatDane_AniFish, Button_NatGerman_AniFish, Button_NatNorwegian_AniFish, Button_NatSwede_AniFish};
+		HorseNat = new JButton[] {Button_NatBrit_AniHorse, Button_NatDane_AniHorse, Button_NatGerman_AniHorse, Button_NatNorwegian_AniHorse, Button_NatSwede_AniHorse};
+		CoffeeCig = new JButton[] {Button_CigBlends_BevCoffee, Button_CigBluemaster_BevCoffee, Button_CigDunhill_BevCoffee, Button_CigPallmall_BevCoffee, Button_CigPrince_BevCoffee};
+		MilkCig = new JButton[] {Button_CigBlends_BevMilk, Button_CigBluemaster_BevMilk, Button_CigDunhill_BevMilk, Button_CigPallmall_BevMilk, Button_CigPrince_BevMilk};
+		RootbeerCig = new JButton[] {Button_CigBlends_BevRootbeer, Button_CigBluemaster_BevRootbeer, Button_CigDunhill_BevRootbeer, Button_CigPallmall_BevRootbeer, Button_CigPrince_BevRootbeer};
+		TeaCig = new JButton[] {Button_CigBlends_BevTea, Button_CigBluemaster_BevTea, Button_CigDunhill_BevTea, Button_CigPallmall_BevTea, Button_CigPrince_BevTea};
+		WaterCig = new JButton[] {Button_CigBlends_BevWater, Button_CigBluemaster_BevWater, Button_CigDunhill_BevWater, Button_CigPallmall_BevWater, Button_CigPrince_BevWater};
+		CoffeeCol = new JButton[] {Button_ColBlue_BevCoffee, Button_ColGreen_BevCoffee, Button_ColRed_BevCoffee, Button_ColWhite_BevCoffee, Button_ColYellow_BevCoffee};
+		MilkCol = new JButton[] {Button_ColBlue_BevMilk, Button_ColGreen_BevMilk, Button_ColRed_BevMilk, Button_ColWhite_BevMilk, Button_ColYellow_BevMilk};
+		RootbeerCol = new JButton[] {Button_ColBlue_BevRootbeer, Button_ColGreen_BevRootbeer, Button_ColRed_BevRootbeer, Button_ColWhite_BevRootbeer, Button_ColYellow_BevRootbeer};
+		TeaCol = new JButton[] {Button_ColBlue_BevTea, Button_ColGreen_BevTea, Button_ColRed_BevTea, Button_ColWhite_BevTea, Button_ColYellow_BevTea};
+		WaterCol = new JButton[] {Button_ColBlue_BevWater, Button_ColGreen_BevWater, Button_ColRed_BevWater, Button_ColWhite_BevWater, Button_ColYellow_BevWater};
+		CoffeeNat = new JButton[] {Button_NatBrit_BevCoffee, Button_NatDane_BevCoffee, Button_NatGerman_BevCoffee, Button_NatNorwegian_BevCoffee, Button_NatSwede_BevCoffee};
+		MilkNat = new JButton[] {Button_NatBrit_BevMilk, Button_NatDane_BevMilk, Button_NatGerman_BevMilk, Button_NatNorwegian_BevMilk, Button_NatSwede_BevMilk};
+		RootbeerNat = new JButton[] {Button_NatBrit_BevRootbeer, Button_NatDane_BevRootbeer, Button_NatGerman_BevRootbeer, Button_NatNorwegian_BevRootbeer, Button_NatSwede_BevRootbeer};
+		TeaNat = new JButton[] {Button_NatBrit_BevTea, Button_NatDane_BevTea, Button_NatGerman_BevTea, Button_NatNorwegian_BevTea, Button_NatSwede_BevTea};
+		WaterNat = new JButton[] {Button_NatBrit_BevWater, Button_NatDane_BevWater, Button_NatGerman_BevWater, Button_NatNorwegian_BevWater, Button_NatSwede_BevWater};
+		BlendsCol = new JButton[] {Button_ColBlue_CigBlends, Button_ColGreen_CigBlends, Button_ColRed_CigBlends, Button_ColWhite_CigBlends, Button_ColYellow_CigBlends};
+		BluemasterCol = new JButton[] {Button_ColBlue_CigBluemaster, Button_ColGreen_CigBluemaster, Button_ColRed_CigBluemaster, Button_ColWhite_CigBluemaster, Button_ColYellow_CigBluemaster};
+		DunhillCol = new JButton[] {Button_ColBlue_CigDunhill, Button_ColGreen_CigDunhill, Button_ColRed_CigDunhill, Button_ColWhite_CigDunhill, Button_ColYellow_CigDunhill};
+		PallmallCol = new JButton[] {Button_ColBlue_CigPallmall, Button_ColGreen_CigPallmall, Button_ColRed_CigPallmall, Button_ColWhite_CigPallmall, Button_ColYellow_CigPallmall};
+		PrinceCol = new JButton[] {Button_ColBlue_CigPrince, Button_ColGreen_CigPrince, Button_ColRed_CigPrince, Button_ColWhite_CigPrince, Button_ColYellow_CigPrince};
+		BlendsNat = new JButton[] {Button_NatBrit_CigBlends, Button_NatDane_CigBlends, Button_NatGerman_CigBlends, Button_NatNorwegian_CigBlends, Button_NatSwede_CigBlends};
+		BluemasterNat = new JButton[] {Button_NatBrit_CigBluemaster, Button_NatDane_CigBluemaster, Button_NatGerman_CigBluemaster, Button_NatNorwegian_CigBlueMaster, Button_NatSwede_CigBluemaster};
+		DunhillNat = new JButton[] {Button_NatBrit_CigDunhill, Button_NatDane_CigDunhill, Button_NatGerman_CigDunhill, Button_NatNorwegian_CigDunhill, Button_NatSwede_CigDunhill};
+		PallmallNat = new JButton[] {Button_NatBrit_CigPallmall, Button_NatDane_CigPallmall, Button_NatGerman_CigPallmall, Button_NatNorwegian_CigPallmall, Button_NatSwede_CigPallmall};
+		PrinceNat = new JButton[] {Button_NatBrit_CigPrince, Button_NatDane_CigPrince, Button_NatGerman_CigPrince, Button_NatNorwegian_CigPrince, Button_NatSwede_CigPrince};
+		BlueNat = new JButton[] {Button_NatBrit_ColBlue, Button_NatDane_ColBlue, Button_NatGerman_ColBlue, Button_NatNorwegian_ColBlue, Button_NatSwede_ColBlue};
+		GreenNat = new JButton[] {Button_NatBrit_ColGreen, Button_NatDane_ColRed, Button_NatGerman_ColGreen, Button_NatNorwegian_ColGreen, Button_NatSwede_ColGreen};
+		RedNat = new JButton[] {Button_NatBrit_ColRed, Button_NatDane_ColWhite, Button_NatGerman_ColRed, Button_NatNorwegian_ColRed, Button_NatSwede_ColRed};
+		WhiteNat = new JButton[] {Button_NatBrit_ColWhite, Button_NatDane_ColYellow, Button_NatGerman_ColWhite, Button_NatNorwegian_ColWhite, Button_NatSwede_ColWhite};
+		YellowNat = new JButton[] {Button_NatBrit_ColYellow, Button_NatDane_Green, Button_NatGerman_ColYellow, Button_NatNorwegian_ColYellow, Button_NatSwede_ColYellow};
+
+		vNum = new JButton[][] {OneNat, OneAni, OneBev, OneCig, OneCol, TwoNat, TwoAni, TwoBev, TwoCig, TwoCol, ThreeNat, ThreeAni, ThreeBev, ThreeCig, ThreeCol, FourNat, FourAni, FourBev, FourCig, FourCol, FiveNat, FiveAni, FiveBev, FiveCig, FiveCol};
+		vAni = new JButton[][] {HorseNat, HorseBev, HorseCig, HorseCol, DogNat, DogBev, DogCig, DogCol, CatNat, CatBev, CatCig, CatCol, BirdNat, BirdBev, BirdCig, BirdCol, FishNat, FishBev, FishCig, FishCol};
+		vBev = new JButton[][] {WaterNat, WaterCig, WaterCol, TeaNat, TeaCig, TeaCol, MilkNat, MilkCig, MilkCol, CoffeeNat, CoffeeCig, CoffeeCol, RootbeerNat, RootbeerCig, RootbeerCol};
+		vCig = new JButton[][] {PallmallNat, PallmallCol, PrinceNat, PrinceCol, BluemasterNat, BluemasterCol, DunhillNat, DunhillCol, BlendsNat, BlendsCol};
+		vCol = new JButton[][] {YellowNat, BlueNat, RedNat, GreenNat, WhiteNat};
+		ver = new JButton[][][] {vNum, vAni, vBev, vCig, vCol};
+
+
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new java.awt.GridBagLayout());
@@ -3489,35 +3658,32 @@ public class PuzzleGui extends javax.swing.JFrame
 		    if(clicks % 4 == 0)
 		    {
 			((JButton)e.getSource()).setBackground(Color.GRAY);
-			((JButton)e.getSource()).setContentAreaFilled(false);
-			((JButton)e.getSource()).setOpaque(true);
 		    }
 		    else if(clicks % 4 == 1)
 		    {
 			((JButton)e.getSource()).setBackground(Color.RED);
-			((JButton)e.getSource()).setContentAreaFilled(false);
-			((JButton)e.getSource()).setOpaque(true);
 		    }
 		    else if(clicks % 4 == 2)
 		    {
 			((JButton)e.getSource()).setBackground(Color.YELLOW);
-			((JButton)e.getSource()).setContentAreaFilled(false);
-			((JButton)e.getSource()).setOpaque(true);
 		    }
 		    else
 		    {
 			((JButton)e.getSource()).setBackground(Color.GREEN);
-			((JButton)e.getSource()).setContentAreaFilled(false);
-			((JButton)e.getSource()).setOpaque(true);
 		    }
 		}
 	}
     }
 
-    public void setupMainButtonListener(JButton myButton)
+    public void setupMainButtonListener(JButton[][][] myButton)
     {
-	myButton.setForeground(Color.GRAY);
-	myButton.addActionListener(new MainButtonListener());
+	for(int i = 0; i < myButton.length; i++)
+	    for(int j = 0; j < myButton[i].length; j++)
+		for(int k = 0; k < myButton[i][j].length; k++)
+		{
+		    myButton[i][j][k].setBackground(Color.GRAY);
+		    myButton[i][j][k].addActionListener(new MainButtonListener());
+		}
     }
 
     // <editor-fold defaultstate="collapsed" desc="Variable Declarations">
@@ -3977,173 +4143,173 @@ public class PuzzleGui extends javax.swing.JFrame
     // End of NetBeans-Generated variables declaration
 
     // User-created Variables declaration
-    private JButton[] BirdNum = {Button_AniBird_Num1, Button_AniBird_Num2, Button_AniBird_Num3, Button_AniBird_Num4, Button_AniBird_Num5};
-    private JButton[] CatNum = {Button_AniCat_Num1, Button_AniCat_Num2, Button_AniCat_Num3, Button_AniCat_Num4, Button_AniCat_Num5};
-    private JButton[] DogNum = {Button_AniDog_Num1, Button_AniDog_Num2, Button_AniDog_Num3, Button_AniDog_Num4, Button_AniDog_Num5};
-    private JButton[] FishNum = {Button_AniFish_Num1, Button_AniFish_Num2, Button_AniFish_Num3, Button_AniFish_Num4, Button_AniFish_Num5};
-    private JButton[] HorseNum = {Button_AniHorse_Num1, Button_AniHorse_Num2, Button_AniHorse_Num3, Button_AniHorse_Num4, Button_AniHorse_Num5};
-    private JButton[] CoffeeAni = {Button_BevCoffee_AniBird, Button_BevCoffee_AniCat, Button_BevCoffee_AniDog, Button_BevCoffee_AniFish, Button_BevCoffee_AniHorse};
-    private JButton[] CoffeeNum = {Button_BevCoffee_Num1, Button_BevCoffee_Num2, Button_BevCoffee_Num3, Button_BevCoffee_Num4, Button_BevCoffee_Num5};
-    private JButton[] MilkAni = {Button_BevMilk_AniBird, Button_BevMilk_AniCat, Button_BevMilk_AniDog, Button_BevMilk_AniFish, Button_BevMilk_AniHorse};
-    private JButton[] MilkNum = {Button_BevMilk_Num1, Button_BevMilk_Num2, Button_BevMilk_Num3, Button_BevMilk_Num4, Button_BevMilk_Num5};
-    private JButton[] RootbeerAni = {Button_BevRootbeer_AniBird, Button_BevRootbeer_AniCat, Button_BevRootbeer_AniDog, Button_BevRootbeer_AniFish, Button_BevRootbeer_AniHorse};
-    private JButton[] RootbeerNum = {Button_BevRootbeer_Num1, Button_BevRootbeer_Num2, Button_BevRootbeer_Num3, Button_BevRootbeer_Num4, Button_BevRootbeer_Num5};
-    private JButton[] TeaAni = {Button_BevTea_AniBird, Button_BevTea_AniCat, Button_BevTea_AniDog, Button_BevTea_AniFish, Button_BevTea_AniHorse};
-    private JButton[] TeaNum = {Button_BevTea_Num1, Button_BevTea_Num2, Button_BevTea_Num3, Button_BevTea_Num4, Button_BevTea_Num5};
-    private JButton[] WaterAni = {Button_BevWater_AniBird, Button_BevWater_AniCat, Button_BevWater_AniDog, Button_BevWater_AniFish, Button_BevWater_AniHorse};
-    private JButton[] WaterNum = {Button_BevWater_Num1, Button_BevWater_Num2, Button_BevWater_Num3, Button_BevWater_Num4, Button_BevWater_Num5};
-    private JButton[] BlendsAni = {Button_CigBlends_AniBird, Button_CigBlends_AniCat, Button_CigBlends_AniDog, Button_CigBlends_AniFish, Button_CigBlends_AniHorse};
-    private JButton[] BlendsBev = {Button_CigBlends_BevCoffee, Button_CigBlends_BevMilk, Button_CigBlends_BevRootbeer, Button_CigBlends_BevTea, Button_CigBlends_BevWater};
-    private JButton[] BlendsNum = {Button_CigBlends_Num1, Button_CigBlends_Num2, Button_CigBlends_Num3, Button_CigBlends_Num4, Button_CigBlends_Num5};
-    private JButton[] BluemasterAni = {Button_CigBluemaster_AniBird, Button_CigBluemaster_AniCat, Button_CigBluemaster_AniDog, Button_CigBluemaster_AniFish, Button_CigBluemaster_AniHorse};
-    private JButton[] BluemasterBev = {Button_CigBluemaster_BevCoffee, Button_CigBluemaster_BevMilk, Button_CigBluemaster_BevRootbeer, Button_CigBluemaster_BevTea, Button_CigBluemaster_BevWater};
-    private JButton[] BlueMasterNum = {Button_CigBluemaster_Num1, Button_CigBluemaster_Num2, Button_CigBluemaster_Num3, Button_CigBluemaster_Num4, Button_CigBluemaster_Num5};
-    private JButton[] DunhillAni = {Button_CigDunhill_AniBird, Button_CigDunhill_AniCat, Button_CigDunhill_AniDog, Button_CigDunhill_AniFish, Button_CigDunhill_AniHorse};
-    private JButton[] DunhillBev = {Button_CigDunhill_BevCoffee, Button_CigDunhill_BevMilk, Button_CigDunhill_BevRootbeer, Button_CigDunhill_BevTea, Button_CigDunhill_BevWater};
-    private JButton[] DunhillNum = {Button_CigDunhill_Num1, Button_CigDunhill_Num2, Button_CigDunhill_Num3, Button_CigDunhill_Num4, Button_CigDunhill_Num5};
-    private JButton[] PallmallAni = {Button_CigPallmall_AniBird, Button_CigPallmall_AniCat, Button_CigPallmall_AniDog, Button_CigPallmall_AniFish, Button_CigPallmall_AniHorse};
-    private JButton[] PallmallBev = {Button_CigPallmall_BevCoffee, Button_CigPallmall_BevMilk, Button_CigPallmall_BevRootbeer, Button_CigPallmall_BevTea, Button_CigPallmall_BevWater};
-    private JButton[] PallmallNum = {Button_CigPallmall_Num1, Button_CigPallmall_Num2, Button_CigPallmall_Num3, Button_CigPallmall_Num4, Button_CigPallmall_Num5};
-    private JButton[] PrinceAni = {Button_CigPrince_AniBird, Button_CigPrince_AniCat, Button_CigPrince_AniDog, Button_CigPrince_AniFish, Button_CigPrince_AniHorse};
-    private JButton[] PrinceBev = {Button_CigPrince_BevCoffee, Button_CigPrince_BevMilk, Button_CigPrince_BevRootbeer, Button_CigPrince_BevTea, Button_CigPrince_BevWater};
-    private JButton[] PrinceNum = {Button_CigPrince_Num1, Button_CigPrince_Num2, Button_CigPrince_Num3, Button_CigPrince_Num4, Button_CigPrince_Num5};
-    private JButton[] BlueAni = {Button_ColBlue_AniBird, Button_ColBlue_AniCat, Button_ColBlue_AniDog, Button_ColBlue_AniFish, Button_ColBlue_AniHorse};
-    private JButton[] BlueBev = {Button_ColBlue_BevCoffee, Button_ColBlue_BevMilk, Button_ColBlue_BevRootbeer, Button_ColBlue_BevTea, Button_ColBlue_BevWater};
-    private JButton[] BlueCig = {Button_ColBlue_CigBlends, Button_ColBlue_CigBluemaster, Button_ColBlue_CigDunhill, Button_ColBlue_CigPallmall, Button_ColBlue_CigPrince};
-    private JButton[] BlueNum = {Button_ColBlue_Num1, Button_ColBlue_Num2, Button_ColBlue_Num3, Button_ColBlue_Num4, Button_ColBlue_Num5};
-    private JButton[] GreenAni = {Button_ColGreen_AniBird, Button_ColGreen_AniCat, Button_ColGreen_AniDog, Button_ColGreen_AniFish, Button_ColGreen_AniHorse};
-    private JButton[] GreenBev = {Button_ColGreen_BevCoffee, Button_ColGreen_BevMilk, Button_ColGreen_BevRootbeer, Button_ColGreen_BevTea, Button_ColGreen_BevWater};
-    private JButton[] GreenCig = {Button_ColGreen_CigBlends, Button_ColGreen_CigBluemaster, Button_ColGreen_CigDunhill, Button_ColGreen_CigPallmall, Button_ColGreen_CigPrince};
-    private JButton[] GreenNum = {Button_ColGreen_Num1, Button_ColGreen_Num2, Button_ColGreen_Num3, Button_ColGreen_Num4, Button_ColGreen_Num5};
-    private JButton[] RedAni = {Button_ColRed_AniBird, Button_ColRed_AniCat, Button_ColRed_AniDog, Button_ColRed_AniFish, Button_ColRed_AniHorse};
-    private JButton[] RedBev = {Button_ColRed_BevCoffee, Button_ColRed_BevMilk, Button_ColRed_BevRootbeer, Button_ColRed_BevTea, Button_ColRed_BevWater};
-    private JButton[] RedCig = {Button_ColRed_CigBlends, Button_ColRed_CigBluemaster, Button_ColRed_CigDunhill, Button_ColRed_CigPallmall, Button_ColRed_CigPrince};
-    private JButton[] RedNum = {Button_ColRed_Num1, Button_ColRed_Num2, Button_ColRed_Num3, Button_ColRed_Num4, Button_ColRed_Num5};
-    private JButton[] WhiteAni = {Button_ColWhite_AniBird, Button_ColWhite_AniCat, Button_ColWhite_AniDog, Button_ColWhite_AniFish, Button_ColWhite_AniHorse};
-    private JButton[] WhiteBev = {Button_ColWhite_BevCoffee, Button_ColWhite_BevMilk, Button_ColWhite_BevRootbeer, Button_ColWhite_BevTea, Button_ColWhite_BevWater};
-    private JButton[] WhiteCig = {Button_ColWhite_CigBlends, Button_ColWhite_CigBluemaster, Button_ColWhite_CigDunhill, Button_ColWhite_CigPallmall, Button_ColWhite_CigPrince};
-    private JButton[] WhiteNum = {Button_ColWhite_Num1, Button_ColWhite_Num2, Button_ColWhite_Num3, Button_ColWhite_Num4, Button_ColWhite_Num5};
-    private JButton[] YellowAni = {Button_ColYellow_AniBird, Button_ColYellow_AniCat, Button_ColYellow_AniDog, Button_ColYellow_AniFish, Button_ColYellow_AniHorse};
-    private JButton[] YellowBev = {Button_ColYellow_BevCoffee, Button_ColYellow_BevMilk, Button_ColYellow_BevRootbeer, Button_ColYellow_BevTea, Button_ColYellow_BevWater};
-    private JButton[] YellowCig = {Button_ColYellow_CigBlends, Button_ColYellow_CigBluemaster, Button_ColYellow_CigDunhill, Button_ColYellow_CigPallmall, Button_ColYellow_CigPrince};
-    private JButton[] YellowNum = {Button_ColYellow_Num1, Button_ColYellow_Num2, Button_ColYellow_Num3, Button_ColYellow_Num4, Button_ColYellow_Num5};
-    private JButton[] BritAni = {Button_NatBrit_AniBird, Button_NatBrit_AniCat, Button_NatBrit_AniDog, Button_NatBrit_AniFish, Button_NatBrit_AniHorse};
-    private JButton[] BritBev = {Button_NatBrit_BevCoffee, Button_NatBrit_BevMilk, Button_NatBrit_BevRootbeer, Button_NatBrit_BevTea, Button_NatBrit_BevWater};
-    private JButton[] BritCig = {Button_NatBrit_CigBlends, Button_NatBrit_CigBluemaster, Button_NatBrit_CigDunhill, Button_NatBrit_CigPallmall, Button_NatBrit_CigPrince};
-    private JButton[] BritCol = {Button_NatBrit_ColBlue, Button_NatBrit_ColGreen, Button_NatBrit_ColRed, Button_NatBrit_ColWhite, Button_NatBrit_ColYellow};
-    private JButton[] BritNum = {Button_NatBrit_Num1, Button_NatBrit_Num2, Button_NatBrit_Num3, Button_NatBrit_Num4, Button_NatBrit_Num5};
-    private JButton[] DaneAni = {Button_NatDane_AniBird, Button_NatDane_AniCat, Button_NatDane_AniDog, Button_NatDane_AniFish, Button_NatDane_AniHorse};
-    private JButton[] DaneBev = {Button_NatDane_BevCoffee, Button_NatDane_BevMilk, Button_NatDane_BevRootbeer, Button_NatDane_BevTea, Button_NatDane_BevWater};
-    private JButton[] DaneCig = {Button_NatDane_CigBlends, Button_NatDane_CigBluemaster, Button_NatDane_CigDunhill, Button_NatDane_CigPallmall, Button_NatDane_CigPrince};
-    private JButton[] DaneCol = {Button_NatDane_ColBlue, Button_NatDane_ColRed, Button_NatDane_ColWhite, Button_NatDane_ColYellow, Button_NatDane_Green};
-    private JButton[] DaneNum = {Button_NatDane_Num1, Button_NatDane_Num2, Button_NatDane_Num3, Button_NatDane_Num4, Button_NatDane_Num5};
-    private JButton[] GermanAni = {Button_NatGerman_AniBird, Button_NatGerman_AniCat, Button_NatGerman_AniDog, Button_NatGerman_AniFish, Button_NatGerman_AniHorse};
-    private JButton[] GermanBev = {Button_NatGerman_BevCoffee, Button_NatGerman_BevMilk, Button_NatGerman_BevRootbeer, Button_NatGerman_BevTea, Button_NatGerman_BevWater};
-    private JButton[] GermanCig = {Button_NatGerman_CigBlends, Button_NatGerman_CigBluemaster, Button_NatGerman_CigDunhill, Button_NatGerman_CigPallmall, Button_NatGerman_CigPrince};
-    private JButton[] GermanCol = {Button_NatGerman_ColBlue, Button_NatGerman_ColGreen, Button_NatGerman_ColRed, Button_NatGerman_ColWhite, Button_NatGerman_ColYellow};
-    private JButton[] GermanNum = {Button_NatGerman_Num1, Button_NatGerman_Num2, Button_NatGerman_Num3, Button_NatGerman_Num4, Button_NatGerman_Num5};
-    private JButton[] NorwegianAni = {Button_NatNorwegian_AniBird, Button_NatNorwegian_AniCat, Button_NatNorwegian_AniDog, Button_NatNorwegian_AniFish, Button_NatNorwegian_AniHorse};
-    private JButton[] NorwegianBev = {Button_NatNorwegian_BevCoffee, Button_NatNorwegian_BevMilk, Button_NatNorwegian_BevRootbeer, Button_NatNorwegian_BevTea, Button_NatNorwegian_BevWater};
-    private JButton[] NorwegianCig = {Button_NatNorwegian_CigBlends, Button_NatNorwegian_CigBlueMaster, Button_NatNorwegian_CigDunhill, Button_NatNorwegian_CigPallmall, Button_NatNorwegian_CigPrince};
-    private JButton[] NorwegianCol = {Button_NatNorwegian_ColBlue, Button_NatNorwegian_ColGreen, Button_NatNorwegian_ColRed, Button_NatNorwegian_ColWhite, Button_NatNorwegian_ColYellow};
-    private JButton[] NorwegianNum = {Button_NatNorwegian_Num1, Button_NatNorwegian_Num2, Button_NatNorwegian_Num3, Button_NatNorwegian_Num4, Button_NatNorwegian_Num5};
-    private JButton[] SwedeAni = {Button_NatSwede_AniBird, Button_NatSwede_AniCat, Button_NatSwede_AniDog, Button_NatSwede_AniFish, Button_NatSwede_AniHorse};
-    private JButton[] SwedeBev = {Button_NatSwede_BevCoffee, Button_NatSwede_BevMilk, Button_NatSwede_BevRootbeer, Button_NatSwede_BevTea, Button_NatSwede_BevWater};
-    private JButton[] SwedeCig = {Button_NatSwede_CigBlends, Button_NatSwede_CigBluemaster, Button_NatSwede_CigDunhill, Button_NatSwede_CigPallmall, Button_NatSwede_CigPrince};
-    private JButton[] SwedeCol = {Button_NatSwede_ColBlue, Button_NatSwede_ColGreen, Button_NatSwede_ColRed, Button_NatSwede_ColWhite, Button_NatSwede_ColYellow};
-    private JButton[] SwedeNum = {Button_NatSwede_Num1, Button_NatSwede_Num2, Button_NatSwede_Num3, Button_NatSwede_Num4, Button_NatSwede_Num5};
+    private JButton[] BirdNum;
+    private JButton[] CatNum;
+    private JButton[] DogNum;
+    private JButton[] FishNum;
+    private JButton[] HorseNum;
+    private JButton[] CoffeeAni;
+    private JButton[] CoffeeNum;
+    private JButton[] MilkAni;
+    private JButton[] MilkNum;
+    private JButton[] RootbeerAni;
+    private JButton[] RootbeerNum;
+    private JButton[] TeaAni;
+    private JButton[] TeaNum;
+    private JButton[] WaterAni;
+    private JButton[] WaterNum;
+    private JButton[] BlendsAni;
+    private JButton[] BlendsBev;
+    private JButton[] BlendsNum;
+    private JButton[] BluemasterAni;
+    private JButton[] BluemasterBev;
+    private JButton[] BlueMasterNum;
+    private JButton[] DunhillAni;
+    private JButton[] DunhillBev;
+    private JButton[] DunhillNum;
+    private JButton[] PallmallAni;
+    private JButton[] PallmallBev;
+    private JButton[] PallmallNum;
+    private JButton[] PrinceAni;
+    private JButton[] PrinceBev;
+    private JButton[] PrinceNum;
+    private JButton[] BlueAni;
+    private JButton[] BlueBev;
+    private JButton[] BlueCig;
+    private JButton[] BlueNum;
+    private JButton[] GreenAni;
+    private JButton[] GreenBev;
+    private JButton[] GreenCig;
+    private JButton[] GreenNum;
+    private JButton[] RedAni;
+    private JButton[] RedBev;
+    private JButton[] RedCig;
+    private JButton[] RedNum;
+    private JButton[] WhiteAni;
+    private JButton[] WhiteBev;
+    private JButton[] WhiteCig;
+    private JButton[] WhiteNum;
+    private JButton[] YellowAni;
+    private JButton[] YellowBev;
+    private JButton[] YellowCig;
+    private JButton[] YellowNum;
+    private JButton[] BritAni;
+    private JButton[] BritBev;
+    private JButton[] BritCig;
+    private JButton[] BritCol;
+    private JButton[] BritNum;
+    private JButton[] DaneAni;
+    private JButton[] DaneBev;
+    private JButton[] DaneCig;
+    private JButton[] DaneCol;
+    private JButton[] DaneNum;
+    private JButton[] GermanAni;
+    private JButton[] GermanBev;
+    private JButton[] GermanCig;
+    private JButton[] GermanCol;
+    private JButton[] GermanNum;
+    private JButton[] NorwegianAni;
+    private JButton[] NorwegianBev;
+    private JButton[] NorwegianCig;
+    private JButton[] NorwegianCol;
+    private JButton[] NorwegianNum;
+    private JButton[] SwedeAni;
+    private JButton[] SwedeBev;
+    private JButton[] SwedeCig;
+    private JButton[] SwedeCol;
+    private JButton[] SwedeNum;
 
-    private JButton[][] hAni = {HorseNum, DogNum, CatNum, BirdNum, FishNum};
-    private JButton[][] hBev = {WaterNum, WaterAni, TeaNum, TeaAni, MilkNum, MilkAni, CoffeeNum, CoffeeAni, RootbeerNum, RootbeerAni};
-    private JButton[][] hCig = {PallmallNum, PallmallAni, PallmallBev, PrinceNum, PrinceAni, PrinceBev, BlueMasterNum, BluemasterAni, BluemasterBev, DunhillNum, DunhillAni, DunhillBev, BlendsNum, BlendsAni, BlendsBev};
-    private JButton[][] hCol = {YellowNum, YellowAni, YellowBev, YellowCig, BlueNum, BlueAni, BlueBev, BlueCig, RedNum, RedAni, RedBev, RedCig, GreenNum, GreenAni, GreenBev, GreenCig, WhiteNum, WhiteAni, WhiteBev, WhiteCig};
-    private JButton[][] hNat = {GermanNum, GermanAni, GermanBev, GermanCig, GermanCol, NorwegianNum, NorwegianAni, NorwegianBev, NorwegianCig, NorwegianCol, SwedeNum, SwedeAni, SwedeBev, SwedeCig, SwedeCol, BritNum, BritAni, BritBev, BritCig, BritCol, DaneNum, DaneAni, DaneBev, DaneCig, DaneCol};
-    private JButton[][][] hor = {hNat, hCol, hCig, hBev, hAni};
+    private JButton[][] hAni;
+    private JButton[][] hBev;
+    private JButton[][] hCig;
+    private JButton[][] hCol;
+    private JButton[][] hNat;
+    private JButton[][][] hor;
 
-    private JButton[] OneAni = {Button_AniBird_Num1, Button_AniCat_Num1, Button_AniDog_Num1, Button_AniFish_Num1, Button_AniHorse_Num1};
-    private JButton[] TwoAni = {Button_AniBird_Num2, Button_AniCat_Num2, Button_AniDog_Num2, Button_AniFish_Num2, Button_AniHorse_Num2};
-    private JButton[] ThreeAni = {Button_AniBird_Num3, Button_AniCat_Num3, Button_AniDog_Num3, Button_AniFish_Num3, Button_AniHorse_Num3};
-    private JButton[] FourAni = {Button_AniBird_Num4, Button_AniCat_Num4, Button_AniDog_Num4, Button_AniFish_Num4, Button_AniHorse_Num4};
-    private JButton[] FiveAni = {Button_AniBird_Num5, Button_AniCat_Num5, Button_AniDog_Num5, Button_AniFish_Num5, Button_AniHorse_Num5};
-    private JButton[] OneBev = {Button_BevCoffee_Num1, Button_BevMilk_Num1, Button_BevRootbeer_Num1, Button_BevTea_Num1, Button_BevWater_Num1};
-    private JButton[] TwoBev = {Button_BevCoffee_Num2, Button_BevMilk_Num2, Button_BevRootbeer_Num2, Button_BevTea_Num2, Button_BevWater_Num2};
-    private JButton[] ThreeBev = {Button_BevCoffee_Num3, Button_BevMilk_Num3, Button_BevRootbeer_Num3, Button_BevTea_Num3, Button_BevWater_Num3};
-    private JButton[] FourBev = {Button_BevCoffee_Num4, Button_BevMilk_Num4, Button_BevRootbeer_Num4, Button_BevTea_Num4, Button_BevWater_Num4};
-    private JButton[] FiveBev = {Button_BevCoffee_Num5, Button_BevMilk_Num5, Button_BevRootbeer_Num5, Button_BevTea_Num5, Button_BevWater_Num5};
-    private JButton[] OneCig = {Button_CigBlends_Num1, Button_CigBluemaster_Num1, Button_CigDunhill_Num1, Button_CigPallmall_Num1, Button_CigPrince_Num1};
-    private JButton[] TwoCig = {Button_CigBlends_Num2, Button_CigBluemaster_Num2, Button_CigDunhill_Num2, Button_CigPallmall_Num2, Button_CigPrince_Num2};
-    private JButton[] ThreeCig = {Button_CigBlends_Num3, Button_CigBluemaster_Num3, Button_CigDunhill_Num3, Button_CigPallmall_Num3, Button_CigPrince_Num3};
-    private JButton[] FourCig = {Button_CigBlends_Num4, Button_CigBluemaster_Num4, Button_CigDunhill_Num4, Button_CigPallmall_Num4, Button_CigPrince_Num4};
-    private JButton[] FiveCig = {Button_CigBlends_Num5, Button_CigBluemaster_Num5, Button_CigDunhill_Num5, Button_CigPallmall_Num5, Button_CigPrince_Num5};
-    private JButton[] OneCol = {Button_ColBlue_Num1, Button_ColGreen_Num1, Button_ColRed_Num1, Button_ColWhite_Num1, Button_ColYellow_Num1};
-    private JButton[] TwoCol = {Button_ColBlue_Num2, Button_ColGreen_Num2, Button_ColRed_Num2, Button_ColWhite_Num2, Button_ColYellow_Num2};
-    private JButton[] ThreeCol = {Button_ColBlue_Num3, Button_ColGreen_Num3, Button_ColRed_Num3, Button_ColWhite_Num3, Button_ColYellow_Num3};
-    private JButton[] FourCol = {Button_ColBlue_Num4, Button_ColGreen_Num4, Button_ColRed_Num4, Button_ColWhite_Num4, Button_ColYellow_Num4};
-    private JButton[] FiveCol = {Button_ColBlue_Num5, Button_ColGreen_Num5, Button_ColRed_Num5, Button_ColWhite_Num5, Button_ColYellow_Num5};
-    private JButton[] OneNat = {Button_NatBrit_Num1, Button_NatDane_Num1, Button_NatGerman_Num1, Button_NatNorwegian_Num1, Button_NatSwede_Num1};
-    private JButton[] TwoNat = {Button_NatBrit_Num2, Button_NatDane_Num2, Button_NatGerman_Num2, Button_NatNorwegian_Num2, Button_NatSwede_Num2};
-    private JButton[] ThreeNat = {Button_NatBrit_Num3, Button_NatDane_Num3, Button_NatGerman_Num3, Button_NatNorwegian_Num3, Button_NatSwede_Num3};
-    private JButton[] FourNat = {Button_NatBrit_Num4, Button_NatDane_Num4, Button_NatGerman_Num4, Button_NatNorwegian_Num4, Button_NatSwede_Num4};
-    private JButton[] FiveNat = {Button_NatBrit_Num5, Button_NatDane_Num5, Button_NatGerman_Num5, Button_NatNorwegian_Num5, Button_NatSwede_Num5};
-    private JButton[] BirdBev = {Button_BevCoffee_AniBird, Button_BevMilk_AniBird, Button_BevRootbeer_AniBird, Button_BevTea_AniBird, Button_BevWater_AniBird};
-    private JButton[] CatBev = {Button_BevCoffee_AniCat, Button_BevMilk_AniCat, Button_BevRootbeer_AniCat, Button_BevTea_AniCat, Button_BevWater_AniCat};
-    private JButton[] DogBev = {Button_BevCoffee_AniDog, Button_BevMilk_AniDog, Button_BevRootbeer_AniDog, Button_BevTea_AniDog, Button_BevWater_AniDog};
-    private JButton[] FishBev = {Button_BevCoffee_AniFish, Button_BevMilk_AniFish, Button_BevRootbeer_AniFish, Button_BevTea_AniFish, Button_BevWater_AniFish};
-    private JButton[] HorseBev = {Button_BevCoffee_AniHorse, Button_BevMilk_AniHorse, Button_BevRootbeer_AniHorse, Button_BevTea_AniHorse, Button_BevWater_AniHorse};
-    private JButton[] BirdCig = {Button_CigBlends_AniBird, Button_CigBluemaster_AniBird, Button_CigDunhill_AniBird, Button_CigPallmall_AniBird, Button_CigPrince_AniBird};
-    private JButton[] CatCig = {Button_CigBlends_AniCat, Button_CigBluemaster_AniCat, Button_CigDunhill_AniCat, Button_CigPallmall_AniCat, Button_CigPrince_AniCat};
-    private JButton[] DogCig = {Button_CigBlends_AniDog, Button_CigBluemaster_AniDog, Button_CigDunhill_AniDog, Button_CigPallmall_AniDog, Button_CigPrince_AniDog};
-    private JButton[] FishCig = {Button_CigBlends_AniFish, Button_CigBluemaster_AniFish, Button_CigDunhill_AniFish, Button_CigPallmall_AniFish, Button_CigPrince_AniFish};
-    private JButton[] HorseCig = {Button_CigBlends_AniHorse, Button_CigBluemaster_AniHorse, Button_CigDunhill_AniHorse, Button_CigPallmall_AniHorse, Button_CigPrince_AniHorse};
-    private JButton[] BirdCol = {Button_ColBlue_AniBird, Button_ColGreen_AniBird, Button_ColRed_AniBird, Button_ColWhite_AniBird, Button_ColYellow_AniBird};
-    private JButton[] CatCol = {Button_ColBlue_AniCat, Button_ColGreen_AniCat, Button_ColRed_AniCat, Button_ColWhite_AniCat, Button_ColYellow_AniCat};
-    private JButton[] DogCol = {Button_ColBlue_AniDog, Button_ColGreen_AniDog, Button_ColRed_AniDog, Button_ColWhite_AniDog, Button_ColYellow_AniDog};
-    private JButton[] FishCol = {Button_ColBlue_AniFish, Button_ColGreen_AniFish, Button_ColRed_AniFish, Button_ColWhite_AniFish, Button_ColYellow_AniFish};
-    private JButton[] HorseCol = {Button_ColBlue_AniHorse, Button_ColGreen_AniHorse, Button_ColRed_AniHorse, Button_ColWhite_AniHorse, Button_ColYellow_AniHorse};
-    private JButton[] BirdNat = {Button_NatBrit_AniBird, Button_NatDane_AniBird, Button_NatGerman_AniBird, Button_NatNorwegian_AniBird, Button_NatSwede_AniBird};
-    private JButton[] CatNat = {Button_NatBrit_AniCat, Button_NatDane_AniCat, Button_NatGerman_AniCat, Button_NatNorwegian_AniCat, Button_NatSwede_AniCat};
-    private JButton[] DogNat = {Button_NatBrit_AniDog, Button_NatDane_AniDog, Button_NatGerman_AniDog, Button_NatNorwegian_AniDog, Button_NatSwede_AniDog};
-    private JButton[] FishNat = {Button_NatBrit_AniFish, Button_NatDane_AniFish, Button_NatGerman_AniFish, Button_NatNorwegian_AniFish, Button_NatSwede_AniFish};
-    private JButton[] HorseNat = {Button_NatBrit_AniHorse, Button_NatDane_AniHorse, Button_NatGerman_AniHorse, Button_NatNorwegian_AniHorse, Button_NatSwede_AniHorse};
-    private JButton[] CoffeeCig = {Button_CigBlends_BevCoffee, Button_CigBluemaster_BevCoffee, Button_CigDunhill_BevCoffee, Button_CigPallmall_BevCoffee, Button_CigPrince_BevCoffee};
-    private JButton[] MilkCig = {Button_CigBlends_BevMilk, Button_CigBluemaster_BevMilk, Button_CigDunhill_BevMilk, Button_CigPallmall_BevMilk, Button_CigPrince_BevMilk};
-    private JButton[] RootbeerCig = {Button_CigBlends_BevRootbeer, Button_CigBluemaster_BevRootbeer, Button_CigDunhill_BevRootbeer, Button_CigPallmall_BevRootbeer, Button_CigPrince_BevRootbeer};
-    private JButton[] TeaCig = {Button_CigBlends_BevTea, Button_CigBluemaster_BevTea, Button_CigDunhill_BevTea, Button_CigPallmall_BevTea, Button_CigPrince_BevTea};
-    private JButton[] WaterCig = {Button_CigBlends_BevWater, Button_CigBluemaster_BevWater, Button_CigDunhill_BevWater, Button_CigPallmall_BevWater, Button_CigPrince_BevWater};
-    private JButton[] CoffeeCol = {Button_ColBlue_BevCoffee, Button_ColGreen_BevCoffee, Button_ColRed_BevCoffee, Button_ColWhite_BevCoffee, Button_ColYellow_BevCoffee};
-    private JButton[] MilkCol = {Button_ColBlue_BevMilk, Button_ColGreen_BevMilk, Button_ColRed_BevMilk, Button_ColWhite_BevMilk, Button_ColYellow_BevMilk};
-    private JButton[] RootbeerCol = {Button_ColBlue_BevRootbeer, Button_ColGreen_BevRootbeer, Button_ColRed_BevRootbeer, Button_ColWhite_BevRootbeer, Button_ColYellow_BevRootbeer};
-    private JButton[] TeaCol = {Button_ColBlue_BevTea, Button_ColGreen_BevTea, Button_ColRed_BevTea, Button_ColWhite_BevTea, Button_ColYellow_BevTea};
-    private JButton[] WaterCol = {Button_ColBlue_BevWater, Button_ColGreen_BevWater, Button_ColRed_BevWater, Button_ColWhite_BevWater, Button_ColYellow_BevWater};
-    private JButton[] CoffeeNat = {Button_NatBrit_BevCoffee, Button_NatDane_BevCoffee, Button_NatGerman_BevCoffee, Button_NatNorwegian_BevCoffee, Button_NatSwede_BevCoffee};
-    private JButton[] MilkNat = {Button_NatBrit_BevMilk, Button_NatDane_BevMilk, Button_NatGerman_BevMilk, Button_NatNorwegian_BevMilk, Button_NatSwede_BevMilk};
-    private JButton[] RootbeerNat = {Button_NatBrit_BevRootbeer, Button_NatDane_BevRootbeer, Button_NatGerman_BevRootbeer, Button_NatNorwegian_BevRootbeer, Button_NatSwede_BevRootbeer};
-    private JButton[] TeaNat = {Button_NatBrit_BevTea, Button_NatDane_BevTea, Button_NatGerman_BevTea, Button_NatNorwegian_BevTea, Button_NatSwede_BevTea};
-    private JButton[] WaterNat = {Button_NatBrit_BevWater, Button_NatDane_BevWater, Button_NatGerman_BevWater, Button_NatNorwegian_BevWater, Button_NatSwede_BevWater};
-    private JButton[] BlendsCol = {Button_ColBlue_CigBlends, Button_ColGreen_CigBlends, Button_ColRed_CigBlends, Button_ColWhite_CigBlends, Button_ColYellow_CigBlends};
-    private JButton[] BluemasterCol = {Button_ColBlue_CigBluemaster, Button_ColGreen_CigBluemaster, Button_ColRed_CigBluemaster, Button_ColWhite_CigBluemaster, Button_ColYellow_CigBluemaster};
-    private JButton[] DunhillCol = {Button_ColBlue_CigDunhill, Button_ColGreen_CigDunhill, Button_ColRed_CigDunhill, Button_ColWhite_CigDunhill, Button_ColYellow_CigDunhill};
-    private JButton[] PallmallCol = {Button_ColBlue_CigPallmall, Button_ColGreen_CigPallmall, Button_ColRed_CigPallmall, Button_ColWhite_CigPallmall, Button_ColYellow_CigPallmall};
-    private JButton[] PrinceCol = {Button_ColBlue_CigPrince, Button_ColGreen_CigPrince, Button_ColRed_CigPrince, Button_ColWhite_CigPrince, Button_ColYellow_CigPrince};
-    private JButton[] BlendsNat = {Button_NatBrit_CigBlends, Button_NatDane_CigBlends, Button_NatGerman_CigBlends, Button_NatNorwegian_CigBlends, Button_NatSwede_CigBlends};
-    private JButton[] BluemasterNat = {Button_NatBrit_CigBluemaster, Button_NatDane_CigBluemaster, Button_NatGerman_CigBluemaster, Button_NatNorwegian_CigBlueMaster, Button_NatSwede_CigBluemaster};
-    private JButton[] DunhillNat = {Button_NatBrit_CigDunhill, Button_NatDane_CigDunhill, Button_NatGerman_CigDunhill, Button_NatNorwegian_CigDunhill, Button_NatSwede_CigDunhill};
-    private JButton[] PallmallNat = {Button_NatBrit_CigPallmall, Button_NatDane_CigPallmall, Button_NatGerman_CigPallmall, Button_NatNorwegian_CigPallmall, Button_NatSwede_CigPallmall};
-    private JButton[] PrinceNat = {Button_NatBrit_CigPrince, Button_NatDane_CigPrince, Button_NatGerman_CigPrince, Button_NatNorwegian_CigPrince, Button_NatSwede_CigPrince};
-    private JButton[] BlueNat = {Button_NatBrit_ColBlue, Button_NatDane_ColBlue, Button_NatGerman_ColBlue, Button_NatNorwegian_ColBlue, Button_NatSwede_ColBlue};
-    private JButton[] GreenNat = {Button_NatBrit_ColGreen, Button_NatDane_ColRed, Button_NatGerman_ColGreen, Button_NatNorwegian_ColGreen, Button_NatSwede_ColGreen};
-    private JButton[] RedNat = {Button_NatBrit_ColRed, Button_NatDane_ColWhite, Button_NatGerman_ColRed, Button_NatNorwegian_ColRed, Button_NatSwede_ColRed};
-    private JButton[] WhiteNat = {Button_NatBrit_ColWhite, Button_NatDane_ColYellow, Button_NatGerman_ColWhite, Button_NatNorwegian_ColWhite, Button_NatSwede_ColWhite};
-    private JButton[] YellowNat = {Button_NatBrit_ColYellow, Button_NatDane_Green, Button_NatGerman_ColYellow, Button_NatNorwegian_ColYellow, Button_NatSwede_ColYellow};
+    private JButton[] OneAni;
+    private JButton[] TwoAni;
+    private JButton[] ThreeAni;
+    private JButton[] FourAni;
+    private JButton[] FiveAni;
+    private JButton[] OneBev;
+    private JButton[] TwoBev;
+    private JButton[] ThreeBev;
+    private JButton[] FourBev;
+    private JButton[] FiveBev;
+    private JButton[] OneCig;
+    private JButton[] TwoCig;
+    private JButton[] ThreeCig;
+    private JButton[] FourCig;
+    private JButton[] FiveCig;
+    private JButton[] OneCol;
+    private JButton[] TwoCol;
+    private JButton[] ThreeCol;
+    private JButton[] FourCol;
+    private JButton[] FiveCol;
+    private JButton[] OneNat;
+    private JButton[] TwoNat;
+    private JButton[] ThreeNat;
+    private JButton[] FourNat;
+    private JButton[] FiveNat;
+    private JButton[] BirdBev;
+    private JButton[] CatBev;
+    private JButton[] DogBev;
+    private JButton[] FishBev;
+    private JButton[] HorseBev;
+    private JButton[] BirdCig;
+    private JButton[] CatCig;
+    private JButton[] DogCig;
+    private JButton[] FishCig;
+    private JButton[] HorseCig;
+    private JButton[] BirdCol;
+    private JButton[] CatCol;
+    private JButton[] DogCol;
+    private JButton[] FishCol;
+    private JButton[] HorseCol;
+    private JButton[] BirdNat;
+    private JButton[] CatNat;
+    private JButton[] DogNat;
+    private JButton[] FishNat;
+    private JButton[] HorseNat;
+    private JButton[] CoffeeCig;
+    private JButton[] MilkCig;
+    private JButton[] RootbeerCig;
+    private JButton[] TeaCig;
+    private JButton[] WaterCig;
+    private JButton[] CoffeeCol;
+    private JButton[] MilkCol;
+    private JButton[] RootbeerCol;
+    private JButton[] TeaCol;
+    private JButton[] WaterCol;
+    private JButton[] CoffeeNat;
+    private JButton[] MilkNat;
+    private JButton[] RootbeerNat;
+    private JButton[] TeaNat;
+    private JButton[] WaterNat;
+    private JButton[] BlendsCol;
+    private JButton[] BluemasterCol;
+    private JButton[] DunhillCol;
+    private JButton[] PallmallCol;
+    private JButton[] PrinceCol;
+    private JButton[] BlendsNat;
+    private JButton[] BluemasterNat;
+    private JButton[] DunhillNat;
+    private JButton[] PallmallNat;
+    private JButton[] PrinceNat;
+    private JButton[] BlueNat;
+    private JButton[] GreenNat;
+    private JButton[] RedNat;
+    private JButton[] WhiteNat;
+    private JButton[] YellowNat;
 
-    private JButton[][] vNum = {OneNat, OneAni, OneBev, OneCig, OneCol, TwoNat, TwoAni, TwoBev, TwoCig, TwoCol, ThreeNat, ThreeAni, ThreeBev, ThreeCig, ThreeCol, FourNat, FourAni, FourBev, FourCig, FourCol, FiveNat, FiveAni, FiveBev, FiveCig, FiveCol};
-    private JButton[][] vAni = {HorseNat, HorseBev, HorseCig, HorseCol, DogNat, DogBev, DogCig, DogCol, CatNat, CatBev, CatCig, CatCol, BirdNat, BirdBev, BirdCig, BirdCol, FishNat, FishBev, FishCig, FishCol};
-    private JButton[][] vBev = {WaterNat, WaterCig, WaterCol, TeaNat, TeaCig, TeaCol, MilkNat, MilkCig, MilkCol, CoffeeNat, CoffeeCig, CoffeeCol, RootbeerNat, RootbeerCig, RootbeerCol};
-    private JButton[][] vCig = {PallmallNat, PallmallCol, PrinceNat, PrinceCol, BluemasterNat, BluemasterCol, DunhillNat, DunhillCol, BlendsNat, BlendsCol};
-    private JButton[][] vCol = {YellowNat, BlueNat, RedNat, GreenNat, WhiteNat};
-    private JButton[][][] ver = {vNum, vAni, vBev, vCig, vCol};
+    private JButton[][] vNum;
+    private JButton[][] vAni;
+    private JButton[][] vBev;
+    private JButton[][] vCig;
+    private JButton[][] vCol;
+    private JButton[][][] ver;
     // End of variables declaration//GEN-END:variables
     // </editor-fold>
-    
-    
+
+
 }
