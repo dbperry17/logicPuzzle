@@ -13,6 +13,7 @@ import javax.swing.JButton;
 import javax.swing.JOptionPane;
 import java.awt.event.KeyEvent;
 import javax.swing.*;
+import javax.swing.undo.UndoManager;
 
 /**
  *
@@ -29,10 +30,10 @@ public class PuzzleGui extends javax.swing.JFrame
 	initComponents();
 	myInitComponents();
 	setupMainButtonListener(ver);
-	ButtonSystemUndo.addActionListener(new MainButtonAction());
-	ButtonSystemRedo.addActionListener(new MainButtonAction());
-	ButtonSystemClear.addActionListener(new MainButtonAction());
-	ButtonSystemDefault.addActionListener(new MainButtonAction());
+	ButtonSystemUndo.addActionListener(new ButtonListener());
+	ButtonSystemRedo.addActionListener(new ButtonListener());
+	ButtonSystemClear.addActionListener(new ButtonListener());
+	ButtonSystemDefault.addActionListener(new ButtonListener());
 	
 	clickOnKey(ButtonSystemUndo, "Undo", KeyEvent.VK_U);
 	clickOnKey(ButtonSystemRedo, "Redo", KeyEvent.VK_R);
@@ -3917,9 +3918,15 @@ public class PuzzleGui extends javax.swing.JFrame
     // End of variables declaration//GEN-END:variables
     // </editor-fold>
     
+    
+    /**********************\
+    *  User-created Code   *
+    \**********************/    
+    
     // <editor-fold defaultstate="collapsed" desc="Variable Declarations created by User">
     // User-created Variables declaration
-    Action buttonAction;
+    protected UndoManager undoMan;
+    
     private JButton[] BirdNum;
     private JButton[] CatNum;
     private JButton[] DogNum;
@@ -4094,166 +4101,15 @@ public class PuzzleGui extends javax.swing.JFrame
     private counter[][][] clickCount;
     // End of variables declaration
     // </editor-fold>
-
-    /**********************\
-    *  User-created Code   *
-    \**********************/
-
-    /**
-     * getIndices - finds i, j, and k in either ver[i][j][k] or hor[i][j][k] for button in grid
-     * 
-     * @param myButton	Button user wants index of
-     * @param vertical	True to search for index in ver[][][],
-     *			False to search in hor[][][]
-     * 
-     * @return		Size three int array of [i, j, k]
-     */
-    private int[] getIndices(JButton myButton, boolean vertical)
-    {
-	int index[] = new int[3];
-
-	if(vertical)
-	{
-	    for(int i = 0; i < ver.length; i++)
-		for(int j = 0; j < ver[i].length; j++)
-		    for(int k = 0; k < ver[i][j].length; k++)
-			if(ver[i][j][k] == myButton)
-			{
-			    index[0] = i;
-			    index[1] = j;
-			    index[2] = k;
-			    break;
-			}
-	}
-	else
-	{
-	    for(int i = 0; i < hor.length; i++)
-		for(int j = 0; j < hor[i].length; j++)
-		    for(int k = 0; k < hor[i][j].length; k++)
-			if(hor[i][j][k] == myButton)
-			{
-			    index[0] = i;
-			    index[1] = j;
-			    index[2] = k;
-			    break;
-			}
-	}
-
-	return index;
-    }
-
-    /**
-     * Actions of various Buttons
-     */    
-    private class MainButtonAction extends AbstractAction
-    {
-	/**
-	 * actionPerformed - Actions for when a button is clicked
-	 * 
-	 * Issue:   After buttons are turned red via another button being turned green,
-	 *	    red buttons will not change color on first click afterwords.
-	 * 
-	 * Resolution:	Green buttons are for confirmed solutions. There should
-	 *		be no need to change red buttons afterward.
-	 *		If absolutely needed, just do the extra click.
-	 * 
-	 * @param e 
-	 */
-	@Override
-	public void actionPerformed(ActionEvent e)
-	{
-	    //Undo Button: Undo last action(s)
-	    if(e.getSource() == ButtonSystemUndo)
-	    {
-		// TODO Implement Code
-	    }
-	    //Redo Button: Redo undone action(s)
-	    else if(e.getSource() == ButtonSystemRedo)
-	    {
-		// TODO Implement Code
-	    }
-	    //Clear Button: Make all buttons grey
-	    else if(e.getSource() == ButtonSystemClear)
-	    {
-		int selectedOption = JOptionPane.showConfirmDialog(null, 
-                                  "Are you sure you wish to clear the board?", 
-                                  "Clear board?",
-                                  JOptionPane.YES_NO_OPTION); 
-		if (selectedOption == JOptionPane.YES_OPTION)
-		{
-		    for(int i = 0; i < ver.length; i++)
-			for(int j = 0; j < ver[i].length; j++)
-			    for(int k = 0; k < ver[i][j].length; k++)
-			    {
-				ver[i][j][k].setBackground(Color.LIGHT_GRAY);
-				clickCount[i][j][k].resetCount();
-			    }
-		    }
-	    }
-	    //Default Button: Implement initial clues
-	    else if(e.getSource() == ButtonSystemDefault)
-	    {
-		// TODO Implement Code
-	    }
-	    //Grid Button: Change color
-	    else if(e.getSource() instanceof JButton)
-	    {
-		int[] vTemp = getIndices((JButton)e.getSource(), true);
-		clickCount[vTemp[0]][vTemp[1]][vTemp[2]].incCount();
-		switch (clickCount[vTemp[0]][vTemp[1]][vTemp[2]].getCount() % 4)
-		{
-		    case 0:
-			((JButton)e.getSource()).setBackground(Color.LIGHT_GRAY);
-			break;
-		    case 1:
-			((JButton)e.getSource()).setBackground(Color.RED);
-			break;
-		    case 2:
-			((JButton)e.getSource()).setBackground(Color.YELLOW);
-			break;
-		    default:
-			for(int i = 0; i < ver[vTemp[0]][vTemp[1]].length; i++)
-			{
-			    clickCount[vTemp[0]][vTemp[1]][i].redCount();
-			    ver[vTemp[0]][vTemp[1]][i].setBackground(Color.RED);
-			}
-			
-			int[] hTemp = getIndices((JButton)e.getSource(), false);
-			for(int i = 0; i < hor[hTemp[0]][hTemp[1]].length; i++)
-			{
-			    clickCount[hTemp[0]][hTemp[1]][i].redCount();
-			    hor[hTemp[0]][hTemp[1]][i].setBackground(Color.RED);
-			}
-			clickCount[vTemp[0]][vTemp[1]][vTemp[2]].greenCount();
-			((JButton)e.getSource()).setBackground(Color.GREEN);
-			break;
-		}
-	    }
-	}
-    }
-
-    /**
-     * setupMainButtonListener - Creates an action listener and sets initial state for all grid buttons
-     * 
-     * @param myButtons	    3D array containing all grid buttons
-     */
-    private void setupMainButtonListener(JButton[][][] myButtons)
-    {
-	for(int i = 0; i < myButtons.length; i++)
-	    for(int j = 0; j < myButtons[i].length; j++)
-		for(int k = 0; k < myButtons[i][j].length; k++)
-		{
-		    myButtons[i][j][k].setBackground(Color.LIGHT_GRAY);
-		    myButtons[i][j][k].addActionListener(new MainButtonAction());
-		}
-    }
-    
+   
+    // <editor-fold defaultstate="collapsed" desc="User's initComponents()">
     /**
      *  Initialize all user-created components
      */
     private void myInitComponents()
     {
-	buttonAction = new MainButtonAction();
+	undoMan = new UndoManager();
+	getRootPane().setDefaultButton(ButtonSystemDefault);
 	
 	BirdNum = new JButton[] {Button_AniBird_Num1, Button_AniBird_Num2, Button_AniBird_Num3, Button_AniBird_Num4, Button_AniBird_Num5};
 	CatNum = new JButton[] {Button_AniCat_Num1, Button_AniCat_Num2, Button_AniCat_Num3, Button_AniCat_Num4, Button_AniCat_Num5};
@@ -4434,8 +4290,72 @@ public class PuzzleGui extends javax.swing.JFrame
 		for(int k = 0; k < clickCount[i][j].length; k++)
 		    clickCount[i][j][k] = new counter();
     }
-
+    // </editor-fold>
     
+    // <editor-fold defaultstate="collapsed" desc="getIndices()">
+    /**
+     * getIndices - finds i, j, and k in either ver[i][j][k] or hor[i][j][k] for button in grid
+     * 
+     * @param myButton	Button user wants index of
+     * @param vertical	True to search for index in ver[][][],
+     *			False to search in hor[][][]
+     * 
+     * @return		Size three int array of [i, j, k]
+     */
+    private int[] getIndices(JButton myButton, boolean vertical)
+    {
+	int index[] = new int[3];
+
+	if(vertical)
+	{
+	    for(int i = 0; i < ver.length; i++)
+		for(int j = 0; j < ver[i].length; j++)
+		    for(int k = 0; k < ver[i][j].length; k++)
+			if(ver[i][j][k] == myButton)
+			{
+			    index[0] = i;
+			    index[1] = j;
+			    index[2] = k;
+			    break;
+			}
+	}
+	else
+	{
+	    for(int i = 0; i < hor.length; i++)
+		for(int j = 0; j < hor[i].length; j++)
+		    for(int k = 0; k < hor[i][j].length; k++)
+			if(hor[i][j][k] == myButton)
+			{
+			    index[0] = i;
+			    index[1] = j;
+			    index[2] = k;
+			    break;
+			}
+	}
+
+	return index;
+    }
+    // </editor-fold>
+    
+    //<editor-fold defaultstate="collapsed" desc="setupMainButtonListener()">
+    /**
+     * setupMainButtonListener - Creates an action listener and sets initial state for all grid buttons
+     * 
+     * @param myButtons	    3D array containing all grid buttons
+     */
+    private void setupMainButtonListener(JButton[][][] myButtons)
+    {
+	for(int i = 0; i < myButtons.length; i++)
+	    for(int j = 0; j < myButtons[i].length; j++)
+		for(int k = 0; k < myButtons[i][j].length; k++)
+		{
+		    myButtons[i][j][k].setBackground(Color.LIGHT_GRAY);
+		    myButtons[i][j][k].addActionListener(new ButtonListener());
+		}
+    }
+    // </editor-fold>
+    
+    // <editor-fold defaultstate="collapsed" desc="clickOnKey(AbstractButton, String, int)">
     //http://stackoverflow.com/questions/4240740/shortcut-key-for-jbutton-without-using-alt-key
     public static void clickOnKey(final AbstractButton button, String actionName, int key)
     {
@@ -4451,4 +4371,99 @@ public class PuzzleGui extends javax.swing.JFrame
 	    }
 	});
     }
+    // </editor-fold>
+    
+    /**
+     * Actions of various Buttons
+     */    
+    private class ButtonListener implements ActionListener
+    {
+	/**
+	 * actionPerformed - Actions for when a button is clicked
+	 * 
+	 * Issue:   After buttons are turned red via another button being turned green,
+	 *	    red buttons will not change color on first click afterwords.
+	 * 
+	 * Resolution:	Green buttons are for confirmed solutions. There should
+	 *		be no need to change red buttons afterward.
+	 *		If absolutely needed, just do the extra click.
+	 * 
+	 * @param e 
+	 */
+	@Override
+	public void actionPerformed(ActionEvent e)
+	{
+	    //Undo Button: Undo last action(s)
+	    if(e.getSource() == ButtonSystemUndo)
+	    {
+		// TODO Implement Code
+	    }
+	    //Redo Button: Redo undone action(s)
+	    else if(e.getSource() == ButtonSystemRedo)
+	    {
+		// TODO Implement Code
+	    }
+	    //Clear Button: Make all buttons grey
+	    else if(e.getSource() == ButtonSystemClear)
+	    {
+		int selectedOption = JOptionPane.showConfirmDialog(null, 
+                                  "Are you sure you wish to clear the board?", 
+                                  "Clear board?",
+                                  JOptionPane.YES_NO_OPTION); 
+		if (selectedOption == JOptionPane.YES_OPTION)
+		{
+		    for(int i = 0; i < ver.length; i++)
+			for(int j = 0; j < ver[i].length; j++)
+			    for(int k = 0; k < ver[i][j].length; k++)
+			    {
+				ver[i][j][k].setBackground(Color.LIGHT_GRAY);
+				clickCount[i][j][k].resetCount();
+			    }
+		    }
+	    }
+	    //Default Button: Implement initial clues
+	    else if(e.getSource() == ButtonSystemDefault)
+	    {
+		// TODO Implement Code
+	    }
+	    //Grid Button: Change color
+	    else if(e.getSource() instanceof JButton)
+	    {
+		int[] vTemp = getIndices((JButton)e.getSource(), true);
+		clickCount[vTemp[0]][vTemp[1]][vTemp[2]].incCount();
+		switch (clickCount[vTemp[0]][vTemp[1]][vTemp[2]].getCount() % 4)
+		{
+		    case 0:
+			((JButton)e.getSource()).setBackground(Color.LIGHT_GRAY);
+			break;
+		    case 1:
+			((JButton)e.getSource()).setBackground(Color.RED);
+			break;
+		    case 2:
+			((JButton)e.getSource()).setBackground(Color.YELLOW);
+			break;
+		    default:
+			for(int i = 0; i < ver[vTemp[0]][vTemp[1]].length; i++)
+			{
+			    clickCount[vTemp[0]][vTemp[1]][i].redCount();
+			    ver[vTemp[0]][vTemp[1]][i].setBackground(Color.RED);
+			}
+			
+			int[] hTemp = getIndices((JButton)e.getSource(), false);
+			for(int i = 0; i < hor[hTemp[0]][hTemp[1]].length; i++)
+			{
+			    clickCount[hTemp[0]][hTemp[1]][i].redCount();
+			    hor[hTemp[0]][hTemp[1]][i].setBackground(Color.RED);
+			}
+			clickCount[vTemp[0]][vTemp[1]][vTemp[2]].greenCount();
+			((JButton)e.getSource()).setBackground(Color.GREEN);
+			break;
+		}
+	    }
+	}
+    }
+
+
+    
+
 }
