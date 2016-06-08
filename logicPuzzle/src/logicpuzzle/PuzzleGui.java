@@ -3,6 +3,9 @@
  * Created by Denise Perry
  * denisebperry@gmail.com
  * May 27, 2016
+ *
+ * Code for Undo Manager use found at http://www.java2s.com/Code/Java/Swing-JFC/TheuseofUndoManager.htm
+ *
  */
 package logicpuzzle;
 
@@ -13,6 +16,11 @@ import javax.swing.JButton;
 import javax.swing.JOptionPane;
 import java.awt.event.KeyEvent;
 import javax.swing.*;
+import javax.swing.event.UndoableEditEvent;
+import javax.swing.event.UndoableEditListener;
+import javax.swing.undo.AbstractUndoableEdit;
+import javax.swing.undo.CannotRedoException;
+import javax.swing.undo.CannotUndoException;
 import javax.swing.undo.UndoManager;
 
 /**
@@ -30,8 +38,50 @@ public class PuzzleGui extends javax.swing.JFrame
 	initComponents();
 	myInitComponents();
 	setupMainButtonListener(ver);
-	ButtonSystemUndo.addActionListener(new ButtonListener());
-	ButtonSystemRedo.addActionListener(new ButtonListener());
+	
+	ButtonSystemUndo.setEnabled(false);
+	ButtonSystemRedo.setEnabled(false);
+	
+	//Setup Undo Button
+	ButtonSystemUndo.addActionListener(new ActionListener()
+	{
+	    public void actionPerformed(ActionEvent ev)
+	    {
+		try
+		{
+		    manager.undo();
+		}
+		catch(CannotUndoException ex)
+		{
+		    ex.printStackTrace();
+	        }
+		finally
+		{
+		    updateButtons();
+	        }
+	    }
+	});
+	
+	//Setup RedoButton
+	ButtonSystemRedo.addActionListener(new ActionListener()
+	{
+	    public void actionPerformed(ActionEvent ev)
+	    {
+		try
+		{
+		    manager.redo();
+		}
+		catch (CannotRedoException ex)
+		{
+		    ex.printStackTrace();
+		}
+		finally
+		{
+		    updateButtons();
+		}
+	    }
+	});
+	
 	ButtonSystemClear.addActionListener(new ButtonListener());
 	ButtonSystemDefault.addActionListener(new ButtonListener());
 	
@@ -3925,7 +3975,8 @@ public class PuzzleGui extends javax.swing.JFrame
     
     // <editor-fold defaultstate="collapsed" desc="Variable Declarations created by User">
     // User-created Variables declaration
-    protected UndoManager undoMan;
+    protected UndoManager manager;
+    SimpleUEListener sl;
     
     private JButton[] BirdNum;
     private JButton[] CatNum;
@@ -4108,8 +4159,9 @@ public class PuzzleGui extends javax.swing.JFrame
      */
     private void myInitComponents()
     {
-	undoMan = new UndoManager();
+	manager = new UndoManager();
 	getRootPane().setDefaultButton(ButtonSystemDefault);
+	sl = new SimpleUEListener();
 	
 	BirdNum = new JButton[] {Button_AniBird_Num1, Button_AniBird_Num2, Button_AniBird_Num3, Button_AniBird_Num4, Button_AniBird_Num5};
 	CatNum = new JButton[] {Button_AniCat_Num1, Button_AniCat_Num2, Button_AniCat_Num3, Button_AniCat_Num4, Button_AniCat_Num5};
@@ -4337,6 +4389,30 @@ public class PuzzleGui extends javax.swing.JFrame
     }
     // </editor-fold>
     
+    public class SimpleUEListener implements UndoableEditListener
+    {
+	// When an UndoableEditEvent is generated (each time one of the buttons
+	// is pressed), we add it to the UndoManager and then get the manager's
+	// undo/redo names and set the undo/redo button labels. Finally, we
+	// enable/disable these buttons by asking the manager what we are
+	// allowed to do.
+	public void undoableEditHappened(UndoableEditEvent ev)
+	{
+	  manager.addEdit(ev.getEdit());
+	  updateButtons();
+	}
+    }
+    
+    // Method to set the text and state of the undo/redo buttons.
+    protected void updateButtons()
+    {
+	ButtonSystemUndo.setText(manager.getUndoPresentationName());
+	ButtonSystemRedo.setText(manager.getRedoPresentationName());
+	ButtonSystemUndo.getParent().validate();
+	ButtonSystemUndo.setEnabled(manager.canUndo());
+	ButtonSystemRedo.setEnabled(manager.canRedo());
+    }
+    
     //<editor-fold defaultstate="collapsed" desc="setupMainButtonListener()">
     /**
      * setupMainButtonListener - Creates an action listener and sets initial state for all grid buttons
@@ -4351,6 +4427,7 @@ public class PuzzleGui extends javax.swing.JFrame
 		{
 		    myButtons[i][j][k].setBackground(Color.LIGHT_GRAY);
 		    myButtons[i][j][k].addActionListener(new ButtonListener());
+		    myButtons[i][j][k].addUndoableEditListener(sl);
 		}
     }
     // </editor-fold>
@@ -4393,18 +4470,8 @@ public class PuzzleGui extends javax.swing.JFrame
 	@Override
 	public void actionPerformed(ActionEvent e)
 	{
-	    //Undo Button: Undo last action(s)
-	    if(e.getSource() == ButtonSystemUndo)
-	    {
-		// TODO Implement Code
-	    }
-	    //Redo Button: Redo undone action(s)
-	    else if(e.getSource() == ButtonSystemRedo)
-	    {
-		// TODO Implement Code
-	    }
 	    //Clear Button: Make all buttons grey
-	    else if(e.getSource() == ButtonSystemClear)
+	    if(e.getSource() == ButtonSystemClear)
 	    {
 		int selectedOption = JOptionPane.showConfirmDialog(null, 
                                   "Are you sure you wish to clear the board?", 
@@ -4463,7 +4530,104 @@ public class PuzzleGui extends javax.swing.JFrame
 	}
     }
 
+    class UndoableJButton extends JButton {
+    private UndoableEditListener listener;
 
+    // For this example, we'll just provide one constructor . . .
+    public UndoableJButton(String txt)
+    {
+      super(txt);
+    }
+
+    // Set the UndoableEditListener.
+    public void addUndoableEditListener(UndoableEditListener l)
+    {
+      listener = l; // Should ideally throw an exception if listener != null
+    }
+
+    // Remove the UndoableEditListener.
+    public void removeUndoableEditListener(UndoableEditListener l)
+    {
+      listener = null;
+    }
+
+    // We override this method to call the super implementation first (to fire
+    // the
+    // action event) and then fire a new UndoableEditEvent to our listener.
+    protected void fireActionPerformed(ActionEvent ev)
+    {
+
+	// Fire the ActionEvent as usual.
+	super.fireActionPerformed(ev);
+
+	if (listener != null)
+	{
+	    listener.undoableEditHappened(new UndoableEditEvent(this,
+					  new UndoableToggleEdit(this)));
+	}
+    }
+  }
     
+    class UndoableToggleEdit extends AbstractUndoableEdit
+    {
 
+	private JButton button;
+
+	private boolean selected;
+
+	// Create a new edit for a JButton that has just been toggled.
+	public UndoableToggleEdit(JButton button)
+	{
+	  this.button = button;
+	  int[] vTemp = getIndices(button, true);
+		clickCount[vTemp[0]][vTemp[1]][vTemp[2]].incCount();
+		switch (clickCount[vTemp[0]][vTemp[1]][vTemp[2]].getCount() % 4)
+		{
+		    case 0:
+			button.setBackground(Color.LIGHT_GRAY);
+			break;
+		    case 1:
+			button.setBackground(Color.RED);
+			break;
+		    case 2:
+			button.setBackground(Color.YELLOW);
+			break;
+		    default:
+			for(int i = 0; i < ver[vTemp[0]][vTemp[1]].length; i++)
+			{
+			    clickCount[vTemp[0]][vTemp[1]][i].redCount();
+			    ver[vTemp[0]][vTemp[1]][i].setBackground(Color.RED);
+			}
+			
+			int[] hTemp = getIndices(button, false);
+			for(int i = 0; i < hor[hTemp[0]][hTemp[1]].length; i++)
+			{
+			    clickCount[hTemp[0]][hTemp[1]][i].redCount();
+			    hor[hTemp[0]][hTemp[1]][i].setBackground(Color.RED);
+			}
+			clickCount[vTemp[0]][vTemp[1]][vTemp[2]].greenCount();
+			(button).setBackground(Color.GREEN);
+			break;
+		}
+	}
+
+	// Return a reasonable name for this edit.
+	public String getPresentationName()
+	{
+	  return "Toggle " + " " + (selected ? "on" : "off");
+	}
+
+	// Redo by setting the button state as it was initially.
+	public void redo() throws CannotRedoException {
+	    super.redo();
+	    button.setSelected(selected);
+	}
+
+	// Undo by setting the button state to the opposite value.
+	public void undo() throws CannotUndoException
+	{
+	    super.undo();
+	    button.setSelected(!selected);
+	}
+    }
 }
