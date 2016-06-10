@@ -4518,74 +4518,78 @@ public class PuzzleGui extends javax.swing.JFrame
 				myGrid[i][j][k].setDefault();
 
 		    // <editor-fold defaultstate="collapsed" desc="Hints">
-		    /***********************************\
-		    * HINTS:				*
-		    *************************************
-		    * Brit	    Red		        *
-		    * Swede	    Dog			*
-		    * Dane	    Tea			*
-		    * Green	    Left of white       *
-		    * Green	    Coffee	        *
-		    * Pall Mall	    Bird	        *
-		    * Yellow	    Dunhill	        *
-		    * House 3	    Milk	        *
-		    * Norwegian	    House 1		*
-		    * Blends	    Next to cat owner   *
-		    * Horse	    Next to Dunhill	*
-		    * Blue Master   Root beer		*
-		    * German	    Prince	        *
-		    * Norwegian	    Next to blue walls  *
-		    * Blends	    Next to water       *
-		    \***********************************/
+		    /***************************************\
+		    *		      HINTS:		    *
+		    *****************************************
+		    *  1. Brit		Red		    *
+		    *  2. Swede		Dog		    *
+		    *  3. Dane		Tea		    *
+		    *  4. Green		Left of white	    *
+		    *  5. Green		Coffee		    *
+		    *  6. Pall Mall	Bird		    *
+		    *  7. Yellow        Dunhill		    *
+		    *  8. House 3	Milk		    *
+		    *  9. Norwegian	House 1		    *
+		    * 10. Blends	Next to cat owner   *
+		    * 11. Horse		Next to Dunhill	    *
+		    * 12. Blue Master   Root beer	    *
+		    * 13. German	Prince		    *
+		    * 14. Norwegian	Next to blue walls  *
+		    * 15. Blends	Next to water       *
+		    \***************************************/
 
-		    //Brit lives in red house
+		    //1. Brit lives in red house
 		    greenChange(Button_NatBrit_ColRed);
 
-		    //Swede owns a dog
+		    //2. Swede owns a dog
 		    greenChange(Button_NatSwede_AniDog);
 
-		    //Dane likes tea
+		    //3. Dane likes tea
 		    greenChange(Button_NatDane_BevTea);
 
-		    //The Norwegian lives in the first house
-		    greenChange(Button_NatNorwegian_Num1);
-
-		    //Person in green house lives to the left of
-		    //the person in white house
+		    //4. Person in green house lives to the left of
+		    //   the person in white house
+		    Button_ColGreen_Num1.setYellow();
 		    Button_ColGreen_Num2.setYellow();
 		    Button_ColGreen_Num3.setYellow();
 		    Button_ColGreen_Num4.setYellow();
-		    Button_ColGreen_Num4.setRed();
-		    Button_ColWhite_Num2.setRed();
+		    Button_ColGreen_Num5.setRed();
+		    Button_ColWhite_Num1.setRed();
+		    Button_ColWhite_Num2.setYellow();
 		    Button_ColWhite_Num3.setYellow();
 		    Button_ColWhite_Num4.setYellow();
 		    Button_ColWhite_Num5.setYellow();
 
-		    //Person in green house likes coffee
+		    //5. Person in green house likes coffee
 		    greenChange(Button_ColGreen_BevCoffee);
 
-		    //The person who smokes Pall Malls owns a bird
+		    //6. The person who smokes Pall Malls owns a bird
 		    greenChange(Button_CigPallmall_AniBird);
 
-		    //The person in the yellow house smokes Dunhills
+		    //7. The person in the yellow house smokes Dunhills
 		    greenChange(Button_ColYellow_CigDunhill);
 
-		    //Person in the third house drinks milk
+		    //8. Person in the third house drinks milk
 		    greenChange(Button_BevMilk_Num3);
+		    
+    		    //9. The Norwegian lives in the first house
+		    greenChange(Button_NatNorwegian_Num1);
+		    Button_ColWhite_Num2.setRed();  //Hint 4 affected
 
-		    //The person who smokes Blue Masters drinks root beer
+		    //12. The person who smokes Blue Masters drinks root beer
 		    greenChange(Button_CigBluemaster_BevRootbeer);
 
-		    //The German smokes Prince cigars
+		    //13. The German smokes Prince cigars
 		    greenChange(Button_NatGerman_CigPrince);
 
-		    //The Norwegian lives next to the blue house
+		    //14. The Norwegian lives next to the blue house
 		    greenChange(Button_ColBlue_Num2);
+		    Button_ColWhite_Num3.setRed();  //Hint 4 affected
 
 
-		    //1. The person who smokes Blends lives next to the cat owner
-		    //2. The person who owns a horse lives next to the person who smokes Dunhills
-		    //3. The person who smokes Blends lives next to the the person who drinks water
+		    //10. The person who smokes Blends lives next to the cat owner
+		    //11. The person who owns a horse lives next to the person who smokes Dunhills
+		    //15. The person who smokes Blends lives next to the the person who drinks water
 		    LeftoverClues clues = LeftoverClues.getInstance();
 		    clues.setVisible(true);
 		    // </editor-fold>
