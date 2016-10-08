@@ -17,20 +17,19 @@ import javax.swing.event.UndoableEditListener;
  * @author Denise
  */
 
-class UndoableJButton extends JButton
+class ColoredJButton extends JButton
 {
     private UndoableEditListener listener;
     private final Color[] myColors;
     private int buttonStatus;
     private boolean forceChange;
 
-    public UndoableJButton()
+    public ColoredJButton()
     {
 	this("");
     }
 
-    // For this example, we'll just provide one constructor . . .
-    public UndoableJButton(String txt)
+    public ColoredJButton(String txt)
     {
 	super(txt);
 	myColors = new Color[] {Color.LIGHT_GRAY, Color.RED, Color.YELLOW, Color.GREEN};

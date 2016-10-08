@@ -16,7 +16,7 @@ import javax.swing.undo.CannotUndoException;
  */
 class UndoableToggleEdit extends AbstractUndoableEdit
 {
-    public UndoableToggleEdit(UndoableJButton button){};
+    public UndoableToggleEdit(ColoredJButton button){};
     
     /**
      * redo - Redo by setting the button state as it was initially.

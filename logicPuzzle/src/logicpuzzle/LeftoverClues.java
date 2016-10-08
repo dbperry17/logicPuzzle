@@ -59,7 +59,7 @@ public class LeftoverClues extends javax.swing.JFrame
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jTextArea1.setRows(3);
-        jTextArea1.setText("1. The person who smokes Blends lives next to the cat owner.\n2. The person who owns a horse lives next to the person who smokes Dunhills.\n3. The person who smokes Blends lives next to the the person who drinks water.");
+        jTextArea1.setText("1. The person who smokes Blends lives next to the cat owner.\n2. The person who owns a horse lives next to the person who smokes Dunhills.\n3. The person who smokes Blends lives next to the person who drinks water.");
         jTextArea1.setAutoscrolls(false);
         jTextArea1.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
         jTextArea1.setMargin(new java.awt.Insets(0, 0, 0, 0));
