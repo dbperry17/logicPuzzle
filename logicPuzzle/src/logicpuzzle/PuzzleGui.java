@@ -4367,7 +4367,7 @@ public class PuzzleGui extends javax.swing.JFrame
 	DaneAni = new javax.swing.JButton[] {Button_NatDane_AniBird, Button_NatDane_AniCat, Button_NatDane_AniDog, Button_NatDane_AniFish, Button_NatDane_AniHorse};
 	DaneBev = new javax.swing.JButton[] {Button_NatDane_BevCoffee, Button_NatDane_BevMilk, Button_NatDane_BevRootbeer, Button_NatDane_BevTea, Button_NatDane_BevWater};
 	DaneCig = new javax.swing.JButton[] {Button_NatDane_CigBlends, Button_NatDane_CigBluemaster, Button_NatDane_CigDunhill, Button_NatDane_CigPallmall, Button_NatDane_CigPrince};
-	DaneCol = new javax.swing.JButton[] {Button_NatDane_ColBlue, Button_NatDane_ColRed, Button_NatDane_ColWhite, Button_NatDane_ColYellow, Button_NatDane_ColGreen};
+	DaneCol = new javax.swing.JButton[] {Button_NatDane_ColBlue, Button_NatDane_ColGreen, Button_NatDane_ColRed, Button_NatDane_ColWhite, Button_NatDane_ColYellow};
 	DaneNum = new javax.swing.JButton[] {Button_NatDane_Num1, Button_NatDane_Num2, Button_NatDane_Num3, Button_NatDane_Num4, Button_NatDane_Num5};
 	GermanAni = new javax.swing.JButton[] {Button_NatGerman_AniBird, Button_NatGerman_AniCat, Button_NatGerman_AniDog, Button_NatGerman_AniFish, Button_NatGerman_AniHorse};
 	GermanBev = new javax.swing.JButton[] {Button_NatGerman_BevCoffee, Button_NatGerman_BevMilk, Button_NatGerman_BevRootbeer, Button_NatGerman_BevTea, Button_NatGerman_BevWater};
@@ -4513,7 +4513,6 @@ public class PuzzleGui extends javax.swing.JFrame
 	    myGrid[temp[0]][i][temp[2]].setBackground(Color.RED);
 	}
 	myButton.setBackground(Color.GREEN);
-	// FIXME: Changing Brit-Red to green causes Dane-White to change to red.
     }
     // </editor-fold>
 
@@ -4597,21 +4596,14 @@ public class PuzzleGui extends javax.swing.JFrame
 
 	//4. Person in green house lives to the left of the person in white house
 	// Green cannot live in right-most house
-	setColor(Button_ColGreen_Num1, 2);
-	setColor(Button_ColGreen_Num2, 2);
-	setColor(Button_ColGreen_Num3, 2);
-	setColor(Button_ColGreen_Num4, 2);
 	setColor(Button_ColGreen_Num5, 1);
 	// White cannot live in left-most house
 	setColor(Button_ColWhite_Num1, 1);
-	setColor(Button_ColWhite_Num2, 2);
-	setColor(Button_ColWhite_Num3, 2);
-	setColor(Button_ColWhite_Num4, 2);
-	setColor(Button_ColWhite_Num5, 2);
 
 	//5. Person in green house likes coffee
 	greenChange(Button_ColGreen_BevCoffee);
-	setColor(Button_BevCoffee_Num5, 1); //Affected by rule 4
+	//Affected by Rule 4:
+	//setColor(Button_BevCoffee_Num5, 1);
 
 	//6. The person who smokes Pall Malls owns a bird
 	greenChange(Button_CigPallmall_AniBird);
@@ -4624,7 +4616,7 @@ public class PuzzleGui extends javax.swing.JFrame
 
 	//9. The Norwegian lives in the first house
 	greenChange(Button_NatNorwegian_Num1);
-	setColor(Button_ColWhite_Num2, 1);  //Hint 4 affected
+	//setColor(Button_NatNorwegian_ColWhite, 1);  //Hint 4 affected
 
 	//10. The person who smokes Blends lives next to the cat owner
 	setColor(Button_CigBlends_AniCat, 1);
@@ -4642,11 +4634,11 @@ public class PuzzleGui extends javax.swing.JFrame
 	greenChange(Button_NatGerman_CigPrince);
 
 	//14. The Norwegian lives next to the blue house
-	greenChange(Button_ColBlue_Num2); //Because hint 9
+	//greenChange(Button_ColBlue_Num2); //Because hint 9
 	setColor(Button_NatNorwegian_ColBlue, 1);
-	setColor(Button_ColWhite_Num3, 1);   //Hint 4 affected
-	setColor(Button_ColGreen_Num1, 1);   //Hint 4 affected
-	setColor(Button_BevCoffee_Num1, 1);  //Hint 5 affected by rule 4 and this
+	//setColor(Button_ColWhite_Num3, 1);   //Hint 4 affected
+	//setColor(Button_ColGreen_Num1, 1);   //Hint 4 affected
+	//setColor(Button_BevCoffee_Num1, 1);  //Hint 5 affected by rule 4 and this
 
 	//15. The person who smokes Blends lives next to the the person who drinks water
 	setColor(Button_CigBlends_BevWater, 1);
