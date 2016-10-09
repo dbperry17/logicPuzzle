@@ -7,115 +7,138 @@
 package logicpuzzle;
 
 import java.awt.Color;
-import java.awt.event.ActionEvent;
 import javax.swing.JButton;
-import javax.swing.event.UndoableEditEvent;
-import javax.swing.event.UndoableEditListener;
 
 /**
- *
+ * Creates a JButton that changes color from light grey to red to yellow to green, and then loops back around.
+ * 
  * @author Denise
  */
 
 class ColoredJButton extends JButton
 {
-    private UndoableEditListener listener;
     private final Color[] myColors;
     private int buttonStatus;
-    private boolean forceChange;
 
+    /**
+     * ColoredJButton - Created an instance of a ColoredJButton with no text.
+     */
     public ColoredJButton()
     {
 	this("");
     }
 
+    /**
+     * ColoredJButton - Created an instance of a ColoredJButton with the contents of String txt.
+     * 
+     * @param txt - A string containing text displayed on the button
+     */
     public ColoredJButton(String txt)
     {
 	super(txt);
 	myColors = new Color[] {Color.LIGHT_GRAY, Color.RED, Color.YELLOW, Color.GREEN};
-	buttonStatus = -1;
+	buttonStatus = -1; //
 	setNextColor();
-	forceChange = false;
     }
     
+    /**
+     * getStatus - Returns the status (in reference to the color) of the button.
+     * 
+     * @return buttonStatus - An int indicating the color in reference to the current position of in Color[] myColors
+     * 0 = light grey
+     * 1 = red
+     * 2 = yellow
+     * 3 = green
+     */
     public int getStatus()
     {
 	return buttonStatus;
     }
 
+    /**
+     * setNextColor - Changes the color of the button to the next color in line.
+     */
     public void setNextColor()
     {
 	buttonStatus++;
 	buttonStatus %= 4;
 	this.setBackground(myColors[buttonStatus]);
-	forceChange = false;
     }
 
+    /**
+     * setPrevColor - Changes the color of the button to the previous color in line
+     * 
+     * NOTE: Meant to be used with an undo feature that has yet to be written.
+     */
     public void setPrevColor()
     {
 	buttonStatus--;
 	buttonStatus %= 4;
 	this.setBackground(myColors[buttonStatus]);
-	forceChange = false;
+    }
+    
+    /**
+     * setColor - Changes the button's color to specified value,
+     *		  regardless of its current color.
+     * 
+     * @param color - The value of the wanted color
+     * 0 = light grey
+     * 1 = red
+     * 2 = yellow
+     * 3 = green
+     */
+    public void setColor(int color)
+    {
+	switch(color)
+	{
+	    case 0:
+		setDefault();
+		break;
+	    case 1:
+		setRed();
+		break;
+	    case 2:
+		setYellow();
+		break;
+	    case 3:
+		setGreen();
+		break;
+	}
     }
 
-    public void setRed()
+    /**
+     * setRed - Changes the button's color to red, regardless of its current color.
+     */
+    private void setRed()
     {
 	buttonStatus = 0;
 	setNextColor();
-	forceChange = true;
     }
     
-    public void setGreen()
+    /**
+     * setGreen - Changes the button's color to green, regardless of its current color.
+     */
+    private void setGreen()
     {
 	buttonStatus = 2;
 	setNextColor();
     }
     
-    public void setYellow()
+    /**
+     * setYellow - Changes the button's color to yellow, regardless of its current color.
+     */
+    private void setYellow()
     {
 	buttonStatus = 1;
 	setNextColor();
     }
     
-    public void setDefault()
+    /**
+     * setDefault - Changes the button's color to light grey, regardless of its current color.
+     */
+    private void setDefault()
     {
 	buttonStatus = -1;
 	setNextColor();
-	forceChange = true;
-    }
-    
-    public boolean wasForced()
-    {
-	return forceChange;
-    }
-
-    // Set the UndoableEditListener.
-    public void addUndoableEditListener(UndoableEditListener l)
-    {
-      listener = l; // Should ideally throw an exception if listener != null
-    }
-
-    // Remove the UndoableEditListener.
-    public void removeUndoableEditListener(UndoableEditListener l)
-    {
-      listener = null;
-    }
-
-    // We override this method to call the super implementation first (to fire
-    // the
-    // action event) and then fire a new UndoableEditEvent to our listener.
-    @Override
-    protected void fireActionPerformed(ActionEvent ev)
-    {
-
-	// Fire the ActionEvent as usual.
-	super.fireActionPerformed(ev);
-
-	if (listener != null)
-	{
-	    listener.undoableEditHappened(new UndoableEditEvent(this,
-					  new UndoableToggleEdit(this)));
-	}
     }
 }
