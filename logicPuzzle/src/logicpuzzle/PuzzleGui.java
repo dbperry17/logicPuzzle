@@ -6,6 +6,7 @@
  */
 package logicpuzzle;
 
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
@@ -4654,6 +4655,66 @@ public class PuzzleGui extends javax.swing.JFrame
     }
     // </editor-fold>
     
+    // <editor-fold defaultstate="collapsed" desc="Changing Button Colors">
+    /**
+     * setNextColor - Changes the color of the button to the next color in line.
+     * 
+     * @param myButton - Button whose color is being changed
+     */
+    public void setNextColor(JButton myButton)
+    {
+	if(myButton.getBackground() == Color.LIGHT_GRAY)
+	    myButton.setBackground(Color.RED);
+	else if(myButton.getBackground() == Color.RED)
+	    myButton.setBackground(Color.YELLOW);
+	else if(myButton.getBackground() == Color.YELLOW)
+	    myButton.setBackground(Color.GREEN);
+	//No reason to change green to grey
+    }
+
+    /**
+     * setPrevColor - Changes the color of the button to the previous color in line
+     * 
+     * @param myButton - Button whose color is being changed
+     */
+    public void setPrevColor(JButton myButton)
+    {
+	if(myButton.getBackground() == Color.RED)
+	    myButton.setBackground(Color.LIGHT_GRAY);
+	else if(myButton.getBackground() == Color.YELLOW)
+	    myButton.setBackground(Color.RED);
+	else if(myButton.getBackground() == Color.GREEN)
+	    myButton.setBackground(Color.YELLOW);
+	//No reason to change grey to green
+    }
+    
+    /**
+     * setColor - Changes the button's color to specified value,
+     *		  regardless of its current color.
+     * 
+     * @param myButton - Button whose color is being changed
+     * @param color - The value of the wanted color
+     */
+    public void setColor(JButton myButton, int color)
+    {
+	switch(color)
+	{
+	    case 0:
+		myButton.setBackground(Color.LIGHT_GRAY);
+		break;
+	    case 1:
+		myButton.setBackground(Color.RED);
+		break;
+	    case 2:
+		myButton.setBackground(Color.YELLOW);
+		break;
+	    case 3:
+		myButton.setBackground(Color.GREEN);
+		break;
+	}
+    }
+    // </editor-fold>
+    
     // <editor-fold desc="MainButtonAction">
     /**
      * Actions of all buttons
@@ -4769,6 +4830,7 @@ public class PuzzleGui extends javax.swing.JFrame
 		    ((ColoredJButton)e.getSource()).setNextColor();
 		
 		ButtonSystemUndo.setEnabled(true);
+		ButtonSystemRedo.setEnabled(false);
 		started = true;
 	    }
 	}

@@ -7,6 +7,7 @@
 package logicpuzzle;
 
 import java.awt.Color;
+import java.io.Serializable;
 import javax.swing.JButton;
 
 /**
@@ -15,10 +16,11 @@ import javax.swing.JButton;
  * @author Denise
  */
 
-class ColoredJButton extends JButton
+class ColoredJButton extends JButton implements Serializable
 {
-    private final Color[] myColors;
-    private int buttonStatus;
+    private final Color[] myColors = new Color[] {Color.LIGHT_GRAY, Color.RED, Color.YELLOW, Color.GREEN};
+    private int status;
+    private String nameVar;
 
     /**
      * ColoredJButton - Created an instance of a ColoredJButton with no text.
@@ -36,9 +38,20 @@ class ColoredJButton extends JButton
     public ColoredJButton(String txt)
     {
 	super(txt);
-	myColors = new Color[] {Color.LIGHT_GRAY, Color.RED, Color.YELLOW, Color.GREEN};
-	buttonStatus = -1; //
-	setNextColor();
+	setColor(0);
+	nameVar = txt;
+    }
+    
+    /**
+     * getNameVar - Returns the text of the button
+     * 
+     * Used for testing purposes
+     * 
+     * @return nameVar
+     */
+    public String getNameVar()
+    {
+	return nameVar;
     }
     
     /**
@@ -52,7 +65,7 @@ class ColoredJButton extends JButton
      */
     public int getStatus()
     {
-	return buttonStatus;
+	return status;
     }
 
     /**
@@ -60,21 +73,19 @@ class ColoredJButton extends JButton
      */
     public void setNextColor()
     {
-	buttonStatus++;
-	buttonStatus %= 4;
-	this.setBackground(myColors[buttonStatus]);
+	status++;
+	status %= 4;
+	this.setBackground(myColors[status]);
     }
 
     /**
      * setPrevColor - Changes the color of the button to the previous color in line
-     * 
-     * NOTE: Meant to be used with an undo feature that has yet to be written.
      */
     public void setPrevColor()
     {
-	buttonStatus--;
-	buttonStatus %= 4;
-	this.setBackground(myColors[buttonStatus]);
+	status--;
+	status %= 4;
+	this.setBackground(myColors[status]);
     }
     
     /**
@@ -92,53 +103,31 @@ class ColoredJButton extends JButton
 	switch(color)
 	{
 	    case 0:
-		setDefault();
+		status = -1;
 		break;
 	    case 1:
-		setRed();
+		status = 0;
 		break;
 	    case 2:
-		setYellow();
+		status = 1;
 		break;
 	    case 3:
-		setGreen();
+		status = 2;
 		break;
 	}
-    }
-
-    /**
-     * setRed - Changes the button's color to red, regardless of its current color.
-     */
-    private void setRed()
-    {
-	buttonStatus = 0;
+	
 	setNextColor();
     }
     
     /**
-     * setGreen - Changes the button's color to green, regardless of its current color.
-     */
-    private void setGreen()
+    * getColors - Returns array myColors
+    * 
+    * Used for bean purposes only.
+    * 
+    * @return myColors;
+    */
+    public Color[] getColors()
     {
-	buttonStatus = 2;
-	setNextColor();
-    }
-    
-    /**
-     * setYellow - Changes the button's color to yellow, regardless of its current color.
-     */
-    private void setYellow()
-    {
-	buttonStatus = 1;
-	setNextColor();
-    }
-    
-    /**
-     * setDefault - Changes the button's color to light grey, regardless of its current color.
-     */
-    private void setDefault()
-    {
-	buttonStatus = -1;
-	setNextColor();
+	return myColors;
     }
 }
