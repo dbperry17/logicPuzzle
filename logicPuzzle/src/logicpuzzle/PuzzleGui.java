@@ -11,6 +11,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
 import java.awt.event.KeyEvent;
+import java.util.Stack;
 import javax.swing.*;
 
 /**
@@ -4190,12 +4191,15 @@ public class PuzzleGui extends javax.swing.JFrame
     // <editor-fold defaultstate="collapsed" desc="Variable Declarations created by User">
     // User-created Variables declaration
     private boolean started;
-    private JButton lastButton;
+    private boolean oneItemRedo;
+    private int counter;
     private int[] lastPos;
-    private Color[] lastRowStatus;
-    private Color[] lastColStatus;
+    private Stack UndoStack;
+    private Stack RedoStack;
+    private Stack posStackUn;
+    private Stack posStackRe;
 
-
+    //Grid Button declarations
     private JButton[] BirdNum;
     private JButton[] CatNum;
     private JButton[] DogNum;
@@ -4303,11 +4307,16 @@ public class PuzzleGui extends javax.swing.JFrame
     private void myInitComponents()
     {
 	started = false;
+	oneItemRedo = false;
+	counter = 0;
+	lastPos = new int[3];
+	UndoStack = new Stack();
+	RedoStack = new Stack();
+	posStackUn = new Stack();
+	posStackRe = new Stack();
+	
 
 	getRootPane().setDefaultButton(ButtonSystemDefault);
-	lastPos = new int[3];
-	lastRowStatus = new Color[5];
-	lastColStatus = new Color[5];
 
 	BirdNum = new javax.swing.JButton[] {Button_AniBird_Num1, Button_AniBird_Num2, Button_AniBird_Num3, Button_AniBird_Num4, Button_AniBird_Num5};
 	CatNum = new javax.swing.JButton[] {Button_AniCat_Num1, Button_AniCat_Num2, Button_AniCat_Num3, Button_AniCat_Num4, Button_AniCat_Num5};
@@ -4497,21 +4506,14 @@ public class PuzzleGui extends javax.swing.JFrame
      */
     private void greenChange(JButton myButton)
     {
-	int[] temp = getIndices(myButton);
-
 	//change row to red
-	for(int i = 0; i < myGrid[temp[0]][temp[1]].length; i++)
-	{
-	    lastRowStatus[i] = myGrid[temp[0]][temp[1]][i].getBackground();
-	    myGrid[temp[0]][temp[1]][i].setBackground(Color.RED);
-	}
+	for(int i = 0; i < myGrid[lastPos[0]][lastPos[1]].length; i++)
+	    myGrid[lastPos[0]][lastPos[1]][i].setBackground(Color.RED);
 
 	//change column to red
-	for(int i = 0; i < myGrid[temp[0]].length; i++)
-	{
-	    lastColStatus[i] = myGrid[temp[0]][i][temp[2]].getBackground();
-	    myGrid[temp[0]][i][temp[2]].setBackground(Color.RED);
-	}
+	for(int i = 0; i < myGrid[lastPos[0]].length; i++)
+	    myGrid[lastPos[0]][i][lastPos[2]].setBackground(Color.RED);
+	
 	myButton.setBackground(Color.GREEN);
     }
     // </editor-fold>
@@ -4522,6 +4524,7 @@ public class PuzzleGui extends javax.swing.JFrame
      *
      * @param myButton - The button that is currently green
      */
+    /*
     private void reverseChange(JButton myButton)
     {
 	int[] temp = getIndices(myButton);
@@ -4534,21 +4537,36 @@ public class PuzzleGui extends javax.swing.JFrame
 	    myGrid[temp[0]][i][temp[2]].setBackground(lastColStatus[i]);
 	myButton.setBackground(Color.YELLOW);
     }
+    */
     // </editor-fold>
-
-    // <editor-fold defaultstate="collapsed" desc="Cleargrid()">
+        
+    // <editor-fold defaultstate="collapsed" desc="clearGrid()">
     /**
      * clearGrid - Changes all grid buttons to light grey.
      */
     private void clearGrid()
     {
+	ButtonSystemUndo.setEnabled(false);
+        ButtonSystemRedo.setEnabled(false);
+	
+	while(!RedoStack.empty())    
+	{
+	    RedoStack.pop();
+	    posStackRe.pop();
+	}
+	
+	while(!UndoStack.empty())    
+	{
+	    UndoStack.pop();
+	    posStackUn.pop();
+	}
+	
 	for(int i = 0; i < myGrid.length; i++)
 	    for(int j = 0; j < myGrid[i].length; j++)
 		for(int k = 0; k < myGrid[i][j].length; k++)
 		    myGrid[i][j][k].setBackground(Color.LIGHT_GRAY);
-
-	ButtonSystemUndo.setEnabled(false);
-        ButtonSystemRedo.setEnabled(false);
+	
+	oneItemRedo = false;
 	started = false;
     }
     // </editor-fold>
@@ -4710,6 +4728,26 @@ public class PuzzleGui extends javax.swing.JFrame
 	}
     }
     // </editor-fold>
+    
+    // <editor-fold defaultstate="collapsed" desc="trackUndo()">
+    private void trackUndo()
+    {
+	// Readability
+	int gridNum = lastPos[0];
+	int rowNum = lastPos[1];
+	int rows = myGrid[gridNum].length;
+	int cols = myGrid[gridNum][rowNum].length;
+	
+	Color[][] undoneGrid = new Color[rows][cols];
+	
+	for(int i = 0; i < rows; i++)
+	    for(int j = 0; j < cols; j++)
+		undoneGrid[i][j] = myGrid[gridNum][i][j].getBackground();
+	
+	UndoStack.push(undoneGrid);
+	posStackUn.push(lastPos);
+    }
+    // </editor-fold>
 
     // <editor-fold desc="MainButtonAction">
     /**
@@ -4728,24 +4766,66 @@ public class PuzzleGui extends javax.swing.JFrame
 	    //Undo Button: Undo last action(s)
 	    if(e.getSource() == ButtonSystemUndo)
 	    {
-		if(lastButton.getBackground() == Color.GREEN)
-		    reverseChange(lastButton);
+		trackUndo(); //get current screen for Redo
+		RedoStack.push(UndoStack.pop());
+		posStackRe.push(posStackUn.pop());
+		
+		//readability
+		int[] position = (int[])posStackUn.peek();
+		Color[][] undoneColors = (Color[][])UndoStack.peek();
+		int g = position[0];
+		for(int i = 0; i < myGrid[g].length; i++)
+		    for(int j = 0; j < myGrid[g][i].length; j++)
+			myGrid[g][i][j].setBackground(undoneColors[i][j]);
+		
+		Color[][] tempColor = (Color[][])RedoStack.pop();
+		int[] tempInt = (int[])posStackRe.pop();
+		
+		if(RedoStack.empty())
+		{
+		    RedoStack.push(tempColor);
+		    posStackRe.push(tempInt);
+		    oneItemRedo = true;
+		}
 		else
-		    setPrevColor(lastButton);
+		    oneItemRedo = false;
+		
+		RedoStack.push(UndoStack.pop());
+		posStackRe.push(posStackUn.pop());
+		
+		if(UndoStack.empty())
+		    ButtonSystemUndo.setEnabled(false);		
 
-	        ButtonSystemUndo.setEnabled(false);
-	        ButtonSystemRedo.setEnabled(true);
+		ButtonSystemRedo.setEnabled(true);
 	    }
 	    //Redo Button: Redo undone action(s)
 	    else if(e.getSource() == ButtonSystemRedo)
 	    {
-		if(lastButton.getBackground() == Color.YELLOW)
-		    greenChange(lastButton);
-		else
-		    setNextColor(lastButton);
 		
-
-		ButtonSystemRedo.setEnabled(false);
+		UndoStack.push(RedoStack.pop());
+		posStackUn.push(posStackRe.pop());
+		
+		int[] position = (int[])posStackRe.peek();
+		Color[][] redoneColors = (Color[][])RedoStack.peek();
+		int g = position[0];
+		
+		for(int i = 0; i < myGrid[g].length; i++)
+		    for(int j = 0; j < myGrid[g][i].length; j++)
+			myGrid[g][i][j].setBackground(redoneColors[i][j]);
+		
+		
+		Color[][] tempColor = (Color[][])RedoStack.pop();
+		int[] tempInt = (int[])posStackRe.pop();
+		
+		if(!RedoStack.empty())
+		{
+		    RedoStack.push(tempColor);
+		    posStackRe.push(tempInt);
+		}
+		
+		if(RedoStack.empty())
+		    ButtonSystemRedo.setEnabled(false);
+		
 		ButtonSystemUndo.setEnabled(true);
 	    }
 	    //Clear Button: Make all buttons grey
@@ -4782,7 +4862,6 @@ public class PuzzleGui extends javax.swing.JFrame
 		}
 		else
 		    resetButton();
-
 	    }
 	    //Close Button
 	    else if(e.getSource() == ButtonSystemClose)
@@ -4802,17 +4881,29 @@ public class PuzzleGui extends javax.swing.JFrame
 	    //Grid Button: Change color
 	    else if(e.getSource() instanceof JButton)
 	    {
-		//For Undo Feature
-		lastButton = (JButton)e.getSource();
+		if(((JButton)e.getSource()).getBackground() != Color.GREEN)
+		{
+		    //For Undo Feature
+		    lastPos = getIndices((JButton)e.getSource());
+		    trackUndo();
 
-		if(((JButton)e.getSource()).getBackground() == Color.YELLOW)
-		    greenChange((JButton)e.getSource());
-		else
-		    setNextColor((JButton)e.getSource());
+		    if(((JButton)e.getSource()).getBackground() == Color.YELLOW)
+			greenChange((JButton)e.getSource());
+		    else
+			setNextColor((JButton)e.getSource());
 
-		ButtonSystemUndo.setEnabled(true);
-		ButtonSystemRedo.setEnabled(false);
-		started = true;
+		    ButtonSystemUndo.setEnabled(true);
+		    ButtonSystemRedo.setEnabled(false);
+
+		    while(!RedoStack.empty())    
+		    {
+			RedoStack.pop();
+			posStackRe.pop();
+			counter--;
+		    }
+		    
+		    started = true;
+		}
 	    }
 	}
     }
