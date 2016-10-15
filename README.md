@@ -8,9 +8,13 @@ For example, if we determine that the third house has blue walls, then (due to t
 Program has an Undo and Redo feature in case of mistakes.
 
 The "Default" button implements all the given clues, but only at the bare minimum. For example, one clue states:
+
 	"The Norwegian lives in the first house."
+
 As such, the spot for Norwegian-First House is marked true. A second clue is:
+
 	"The Norwegian lives next to the blue house."
+
 Since the Norwegian cannot live in the blue house if he lives next to it, the spot for Norwegian-Blue is marked false.
 Putting these clues together, we can infer that the first house does not have blue walls. This spot, however, has remained unchanged. The program is designed to make solving the puzzle as painless as possible, but it's still the user's job to actually solve it.
 Any clues that the user can still glean information from show up in a popup window.
