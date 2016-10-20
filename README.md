@@ -22,3 +22,5 @@ Any clues that the user can still glean information from show up in a popup wind
 Future plans involve replacing the "Default" button with a "Load" button, as well as adding a "Save" button so that the user may save their current progress.
 
 Far future plans involve adjustable grid sizes for use with other logic puzzles. It is currently unknown if this goal will be reached.
+
+Current Glitches: Undo/Redo does not work if you have switched grids
